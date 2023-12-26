@@ -1638,7 +1638,8 @@
                                         "command": "EVENT_ACTOR_EMOTE",
                                         "args": {
                                             "actorId": "player",
-                                            "emoteId": "c8d5eadd-dced-43df-8367-1e4d9bfc7923"
+                                            "emoteId": "4c77e4b9-c407-4053-a26a-422adbad179e",
+                                            "__collapse": true
                                         },
                                         "id": "20b005c3-9537-40cf-832d-9168655452dd"
                                     },
@@ -1740,37 +1741,64 @@
                                         "id": "8a352ade-e619-4dda-9dae-92dc22b5593e"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "text",
                                             "text": [
-                                                "Rebecca:\nHallo winston, wie war \ndein Tag?"
+                                                "Hallo winston, wie war \ndein Tag?"
                                             ],
+                                            "nameTag": "Rebecca",
+                                            "nameX": 2,
+                                            "avatarType": "small",
                                             "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
                                             "__collapse": true
                                         },
-                                        "id": "508c0b04-3e0b-405d-8994-4d69042b9f9c"
+                                        "id": "edd5d58c-b083-49ae-8dd1-5bb750aae665"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "nameTag",
                                             "text": [
-                                                "Winston:\nWuff"
+                                                "Wuff"
                                             ],
+                                            "nameTag": "Winston",
+                                            "nameX": 2,
+                                            "avatarType": "small",
                                             "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
                                             "__collapse": true
                                         },
-                                        "id": "6c28bc1a-1ba8-4911-983a-eecd592d9cc3"
+                                        "id": "21be023f-ef8d-4d9c-b76d-b0e1409ab12a"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "nameTag",
                                             "text": [
-                                                "Rebecca:\nIch freu mich auch dich\nzu sehen"
+                                                "Ich freu mich auch dich\nzu sehen"
                                             ],
+                                            "nameTag": "Rebecca",
+                                            "nameX": 2,
+                                            "avatarType": "small",
                                             "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
                                             "__collapse": true
                                         },
-                                        "id": "645fc999-5a91-4b2f-96cc-8e95e602dcf3"
+                                        "id": "068b6b8c-574a-4268-ba80-dd3a5587f27c"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_SET_DIRECTION",
@@ -1785,26 +1813,44 @@
                                         "id": "1285b81f-8a33-4ddc-98a8-edb0dabb9f37"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "nameTag",
                                             "text": [
-                                                "Rebecca:\nMarkus soll ich \ndir beim tragen helfen?"
+                                                "Markus soll ich \ndir beim tragen helfen?"
                                             ],
+                                            "nameTag": "Rebecca",
+                                            "nameX": 2,
+                                            "avatarType": "small",
                                             "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
                                             "__collapse": true
                                         },
-                                        "id": "8faf7d51-e53b-4744-b663-2e87be5a087e"
+                                        "id": "0d5e96f3-040a-444a-a7e5-9efd00b01165"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "text",
                                             "text": [
-                                                "Markus:\nNa geht scho ..."
+                                                "Nein geht schon danke"
                                             ],
+                                            "nameTag": "Markus",
+                                            "nameX": 2,
+                                            "avatarType": "small",
                                             "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
                                             "__collapse": true
                                         },
-                                        "id": "b2d79f7c-712b-4017-8cab-c13ec18d8b6b"
+                                        "id": "bd08aeaf-3db5-4b87-ab32-66c4f244ffa6"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_SET_DIRECTION",
@@ -1819,15 +1865,24 @@
                                         "id": "7dc37303-9961-4042-8445-a896b0738d45"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "text",
                                             "text": [
-                                                "Rebecca:\nOk Winston dann lass \nuns ins wohnzimmer \ngehen."
+                                                "Ok Winston dann lass \nuns ins wohnzimmer \ngehen."
                                             ],
+                                            "nameTag": "Rebecca",
+                                            "nameX": 2,
+                                            "avatarType": "small",
                                             "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
                                             "__collapse": true
                                         },
-                                        "id": "80153e36-d57a-4bd4-8e3c-90f92eb62d49"
+                                        "id": "ca14e016-6290-402d-8547-47264fcce233"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_MOVE_TO",
@@ -3458,14 +3513,50 @@
                             "children": {
                                 "true": [
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "text",
                                             "text": [
-                                                "oh nein der \ntischtennis ball..."
+                                                "Wo ist er den nur?! Ich hab ihn doch hier versteckt..."
                                             ],
-                                            "avatarId": ""
+                                            "nameTag": "Markus",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left"
                                         },
-                                        "id": "d8984222-8bf9-4ce7-876a-d5b2f7a9f916"
+                                        "id": "f8378e63-96fa-4de3-83f5-ebbc1cf68f4a"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "$self$",
+                                            "emoteId": "c8d5eadd-dced-43df-8367-1e4d9bfc7923"
+                                        },
+                                        "id": "d80a8155-7070-48dd-b1e7-88ccc578a44f"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "text": [
+                                                "Oh nein der \nTischtennisball!!!"
+                                            ],
+                                            "nameTag": "Markus",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left"
+                                        },
+                                        "id": "9bafb408-d33d-4146-9b88-5f0fe6ee71cf"
                                     },
                                     {
                                         "command": "EVENT_SET_TRUE",
@@ -3488,14 +3579,23 @@
                                 ],
                                 "false": [
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "text",
                                             "text": [
-                                                "Los hol den ball \nwinston!"
+                                                "Los winston bitte hol den ball!"
                                             ],
-                                            "avatarId": ""
+                                            "nameTag": "Markus",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left"
                                         },
-                                        "id": "a1d99c5a-cf5f-4ba8-a921-5fda6d8cd0be"
+                                        "id": "035bab2c-cae9-4648-8701-f7ea1fd8dc82"
                                     }
                                 ]
                             },
@@ -6307,52 +6407,91 @@
                                         "id": "57d817f8-5d81-4082-a671-975723996981"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "text",
                                             "text": [
-                                                "Markus:\nHey winston, was geht?"
+                                                "Hey winston, was geht?"
                                             ],
+                                            "nameTag": "Markus",
+                                            "nameX": 2,
+                                            "avatarType": "small",
                                             "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
                                             "__collapse": true
                                         },
-                                        "id": "6fa58dc7-c978-4599-95fa-8ff9bc5665e3"
+                                        "id": "053f41a1-e002-4cb3-97bb-05fd89902379"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "nameTag",
                                             "text": [
-                                                "Winston:\nWuff Wuff"
+                                                "Wuff Wuff"
                                             ],
+                                            "nameTag": "Winston",
+                                            "nameX": 2,
+                                            "avatarType": "small",
                                             "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
                                             "__collapse": true
                                         },
-                                        "id": "1af39a26-f8a4-44ee-b221-53492c164c4f"
+                                        "id": "2444e019-f9aa-4c93-a9b1-3e766a15af8e"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "text",
                                             "text": [
-                                                "Markus:\nBrav an ganzen tag \ngeschlafen stimmts?"
+                                                "Brav an ganzen tag \ngeschlafen stimmts?"
                                             ],
-                                            "avatarId": ""
+                                            "nameTag": "Markus",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": true
                                         },
-                                        "id": "3c0794f8-fea1-4240-907b-3c83e649067b"
+                                        "id": "09866b24-bf0f-4bb0-8149-3796819e6bb2"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "nameTag",
                                             "text": [
-                                                "Markus:\nSo ein leben hätt i a \ngern."
+                                                "So ein leben hätt i a \ngern."
                                             ],
-                                            "avatarId": ""
+                                            "nameTag": "Markus",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": true
                                         },
-                                        "id": "9b21eb40-71f1-4cab-bbe6-72bc45c7caf5"
+                                        "id": "3412f12d-0ac5-4506-9a9a-24f34d41524a"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_EMOTE",
                                         "args": {
                                             "actorId": "$self$",
-                                            "emoteId": "c8d5eadd-dced-43df-8367-1e4d9bfc7923"
+                                            "emoteId": "a410a4c7-a37d-48ea-917b-f531ba557841",
+                                            "__collapse": true
                                         },
                                         "id": "fbd4dba0-fcf2-4204-a70a-fd698c6f05de"
                                     },
@@ -6369,26 +6508,44 @@
                                         "id": "75e66c5f-97cb-4744-96b5-dd2934a746fc"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "text",
                                             "text": [
-                                                "Markus:\nRebecca i muas drigend \nkacken.\nKomm bloß ned ins Bad!"
+                                                "Rebecca i muas drigend \nkacken.\nKomm bloß ned ins Bad!"
                                             ],
+                                            "nameTag": "Markus",
+                                            "nameX": 2,
+                                            "avatarType": "small",
                                             "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
                                             "__collapse": true
                                         },
-                                        "id": "fd60c242-4ff8-4c5c-9d37-6f9b4cc1c853"
+                                        "id": "19bd8136-9327-44a3-be19-df46221882e3"
                                     },
                                     {
-                                        "command": "EVENT_TEXT",
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
                                         "args": {
+                                            "__scriptTabs": "text",
                                             "text": [
-                                                "Rebecca:\nDanke für die info"
+                                                "Danke für die info."
                                             ],
+                                            "nameTag": "Rebecca",
+                                            "nameX": 2,
+                                            "avatarType": "small",
                                             "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
                                             "__collapse": true
                                         },
-                                        "id": "b9edf7dc-2f81-4e4d-bf64-2ca2d448f2cc"
+                                        "id": "cca30650-82e9-4563-a7c7-418a3a2b5240"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_SET_DIRECTION",
@@ -6415,7 +6572,8 @@
                                                 "value": 11
                                             },
                                             "moveType": "horizontal",
-                                            "useCollisions": false
+                                            "useCollisions": false,
+                                            "__collapse": true
                                         },
                                         "id": "7e956c3a-220c-46f1-a234-cde4d6c37f06"
                                     },
@@ -40027,8 +40185,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1307,
-        "worldScrollY": 883,
+        "worldScrollX": 2970,
+        "worldScrollY": 1004,
         "zoom": 206.04740397073328,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -40077,7 +40235,8 @@
         "batterylessEnabled": false,
         "favoriteEvents": [
             "EVENT_TEXT",
-            "EVENT_SWITCH_SCENE"
+            "EVENT_SWITCH_SCENE",
+            "EVENT_DIALOGUE_NAME_LARGE_AVATAR"
         ],
         "customColorsWhite": "E8F8E0",
         "customColorsLight": "B0F088",
