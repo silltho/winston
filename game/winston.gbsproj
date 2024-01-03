@@ -9369,7 +9369,8 @@
             "height": 18,
             "imageWidth": 160,
             "imageHeight": 144,
-            "filename": "cat_fight_background.png"
+            "filename": "cat_fight_background.png",
+            "tileColors": []
         },
         {
             "id": "6fad1892-bcb2-4924-bd1c-1e4d03dfeabb",
@@ -42217,7 +42218,7 @@
             "symbol": "sound_gbstudio_sfx_sav",
             "filename": "Tronimal_Sound_Effects.sav",
             "type": "fxhammer",
-            "inode": "1970324837560029",
+            "inode": "129363923",
             "_v": 1661702554742
         }
     ],
@@ -42336,6 +42337,11 @@
             "symbol": "var_cat1_sleeps"
         },
         {
+            "id": "4",
+            "name": "cat2_sleeps",
+            "symbol": "var_cat2_sleeps"
+        },
+        {
             "id": "6",
             "name": "Quest7"
         },
@@ -42437,11 +42443,6 @@
             "id": "f133f79e-677a-496c-9b77-efec52f500e4__L0",
             "name": "got_catnip",
             "symbol": "var_got_catnip"
-        },
-        {
-            "id": "4",
-            "name": "cat2_sleeps",
-            "symbol": "var_cat2_sleeps"
         }
     ],
     "engineFieldValues": [
@@ -42455,16 +42456,16 @@
         }
     ],
     "settings": {
-        "startSceneId": "7f9193d3-2b26-45d1-951d-7416ec400079",
-        "startX": 7,
-        "startY": 8,
+        "startSceneId": "9c9cf542-d53e-41c0-8028-059d38451ef7",
+        "startX": 20,
+        "startY": 14,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 1687,
-        "worldScrollY": 839,
+        "worldScrollX": 1294,
+        "worldScrollY": 1086,
         "zoom": 206.04740397073328,
         "customColorsEnabled": true,
         "sgbEnabled": false,
@@ -42493,9 +42494,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            523,
-            429,
-            356
+            303,
+            249,
+            206
         ],
         "showNavigator": true,
         "defaultFontId": "948c169c-8e4b-491c-a5f0-66898bbf45d9",
