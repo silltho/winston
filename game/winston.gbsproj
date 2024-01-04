@@ -6364,7 +6364,7 @@
                                 "comparator": 1,
                                 "__collapseElse": false,
                                 "__collapse": true,
-                                "__comment": false
+                                "__comment": true
                             },
                             "children": {
                                 "true": [
@@ -6783,7 +6783,7 @@
                     "hit2Script": [],
                     "hit3Script": [],
                     "id": "817867a1-91c8-4b9c-ae7c-c57a1f9a1ba3",
-                    "x": 16,
+                    "x": 17,
                     "y": 5
                 }
             ],
@@ -6856,6 +6856,311 @@
                                 "fadeSpeed": "2"
                             },
                             "id": "bd0d7081-4318-4eb2-89f6-8e452a9f88bc"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "a410b536-5c1f-4a07-a8fc-ea3c9ef7e57d",
+                    "x": 28,
+                    "y": 3,
+                    "symbol": "trigger_5",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "17",
+                                "operator": "==",
+                                "comparator": 1,
+                                "__collapseElse": false,
+                                "__collapse": false,
+                                "__comment": false
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_ACTOR_HIDE",
+                                        "args": {
+                                            "actorId": "50fb2aa1-cc19-4ba6-9680-bb2586225e3b",
+                                            "__collapse": true
+                                        },
+                                        "id": "a828af47-05a4-447e-997c-604fa4d25c98"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_MOVE_TO",
+                                        "args": {
+                                            "actorId": "player",
+                                            "x": {
+                                                "type": "number",
+                                                "value": 27
+                                            },
+                                            "y": {
+                                                "type": "number",
+                                                "value": 12
+                                            },
+                                            "moveType": "horizontal",
+                                            "useCollisions": false,
+                                            "__collapse": true
+                                        },
+                                        "id": "5d311a11-0474-4ba0-bb6a-5e6cb80e604c"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "player",
+                                            "emoteId": "c8d5eadd-dced-43df-8367-1e4d9bfc7923",
+                                            "__collapse": true
+                                        },
+                                        "id": "be0b21f8-e30b-47d2-bf95-c1f62932067d"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "player",
+                                            "direction": {
+                                                "type": "direction",
+                                                "value": "up"
+                                            },
+                                            "__collapse": true
+                                        },
+                                        "id": "a3e365f9-16f8-4003-813e-c97f05933d4e"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SHOW",
+                                        "args": {
+                                            "actorId": "50fb2aa1-cc19-4ba6-9680-bb2586225e3b",
+                                            "__collapse": true
+                                        },
+                                        "id": "4b19dc09-06cb-4edb-9f9f-f3e6a98fe358"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_MOVE_TO",
+                                        "args": {
+                                            "actorId": "50fb2aa1-cc19-4ba6-9680-bb2586225e3b",
+                                            "x": {
+                                                "type": "number",
+                                                "value": 27
+                                            },
+                                            "y": {
+                                                "type": "number",
+                                                "value": 11
+                                            },
+                                            "moveType": "horizontal",
+                                            "useCollisions": false,
+                                            "__collapse": true
+                                        },
+                                        "id": "f75a0d3b-18e7-466c-b381-dab7d805f7cf"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "50fb2aa1-cc19-4ba6-9680-bb2586225e3b",
+                                            "direction": {
+                                                "type": "direction",
+                                                "value": "down"
+                                            },
+                                            "__collapse": true
+                                        },
+                                        "id": "9c128ee6-e9c2-45cd-b4bc-04e453320b4e"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "text": [
+                                                "Hey winston, was geht?"
+                                            ],
+                                            "nameTag": "Markus",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": true
+                                        },
+                                        "id": "5263df5f-d76f-41db-ab34-fb84cbd903a7"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "nameTag",
+                                            "text": [
+                                                "Wuff Wuff"
+                                            ],
+                                            "nameTag": "Winston",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": true
+                                        },
+                                        "id": "4155b0e7-e1b7-49e3-97c7-75500a96733d"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "text": [
+                                                "Brav an ganzen tag \ngeschlafen stimmts?"
+                                            ],
+                                            "nameTag": "Markus",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": true
+                                        },
+                                        "id": "e1aaf25e-45e7-41fb-afaf-94a3ee1ea5bf"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "nameTag",
+                                            "text": [
+                                                "So ein leben hätt i a \ngern."
+                                            ],
+                                            "nameTag": "Markus",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": true
+                                        },
+                                        "id": "5f0ebbe1-7109-4adc-a848-322aa8a284b2"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_EMOTE",
+                                        "args": {
+                                            "actorId": "50fb2aa1-cc19-4ba6-9680-bb2586225e3b",
+                                            "emoteId": "a410a4c7-a37d-48ea-917b-f531ba557841",
+                                            "__collapse": true
+                                        },
+                                        "id": "082142f2-cd5c-4298-9c05-5a4bbf331424"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "50fb2aa1-cc19-4ba6-9680-bb2586225e3b",
+                                            "direction": {
+                                                "type": "direction",
+                                                "value": "left"
+                                            },
+                                            "__collapse": true
+                                        },
+                                        "id": "66af384e-9b62-446e-a33f-ca7acf471c06"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "text": [
+                                                "Rebecca i muas drigend \nkacken.\nKomm bloß ned ins Bad!"
+                                            ],
+                                            "nameTag": "Markus",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": true
+                                        },
+                                        "id": "992230d6-b0b8-4423-9023-1d2720349a42"
+                                    },
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "text": [
+                                                "Danke für die info."
+                                            ],
+                                            "nameTag": "Rebecca",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": true
+                                        },
+                                        "id": "1974160e-1f99-4d4c-af89-0343eb6b92ae"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_SET_DIRECTION",
+                                        "args": {
+                                            "actorId": "817867a1-91c8-4b9c-ae7c-c57a1f9a1ba3",
+                                            "direction": {
+                                                "type": "direction",
+                                                "value": "down"
+                                            },
+                                            "__collapse": true
+                                        },
+                                        "id": "d243c84a-cc9d-4dff-a3c5-fb498d3ae13a"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_MOVE_TO",
+                                        "args": {
+                                            "actorId": "50fb2aa1-cc19-4ba6-9680-bb2586225e3b",
+                                            "x": {
+                                                "type": "number",
+                                                "value": 39
+                                            },
+                                            "y": {
+                                                "type": "number",
+                                                "value": 11
+                                            },
+                                            "moveType": "horizontal",
+                                            "useCollisions": false,
+                                            "__collapse": true
+                                        },
+                                        "id": "fd9ababd-eafb-4bf9-ac2d-4f32edb2a873"
+                                    },
+                                    {
+                                        "command": "EVENT_ACTOR_DEACTIVATE",
+                                        "args": {
+                                            "actorId": "50fb2aa1-cc19-4ba6-9680-bb2586225e3b",
+                                            "__collapse": true
+                                        },
+                                        "id": "7499067e-f065-4a1e-919b-c767c79dc54a"
+                                    },
+                                    {
+                                        "command": "EVENT_SET_VALUE",
+                                        "args": {
+                                            "variable": "17",
+                                            "value": {
+                                                "type": "number",
+                                                "value": 2
+                                            },
+                                            "__collapse": true
+                                        },
+                                        "id": "f253286c-4624-4b14-8512-f137b60113fb"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "69920ea5-f5a0-46a4-bde4-530da3a0179c"
                         }
                     ],
                     "leaveScript": []
@@ -42118,6 +42423,15 @@
                     "id": "fe3b80dc-d610-416b-be14-486e1e145bac"
                 }
             ]
+        },
+        {
+            "id": "803ef7c6-716d-455b-a708-18d1f69fe3cf",
+            "name": "disable controls",
+            "description": "",
+            "variables": {},
+            "actors": {},
+            "symbol": "script_14",
+            "script": []
         }
     ],
     "music": [
@@ -42559,8 +42873,8 @@
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 865,
-        "worldScrollY": 748,
+        "worldScrollX": 984,
+        "worldScrollY": 634,
         "zoom": 164.17173164524138,
         "customColorsEnabled": true,
         "sgbEnabled": false,
