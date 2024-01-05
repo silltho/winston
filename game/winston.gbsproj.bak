@@ -10054,9 +10054,64 @@
                 {
                     "command": "EVENT_MUSIC_PLAY",
                     "args": {
-                        "musicId": "05ef4530-7c73-4949-9a26-c61ff0df5f16"
+                        "musicId": "ef1c7588-a511-46c1-9a80-9c2c3eef561a"
                     },
                     "id": "8b3283bb-9e3c-47bf-bb60-44def4517a00"
+                },
+                {
+                    "command": "EVENT_AWAIT_INPUT",
+                    "args": {
+                        "input": [
+                            "a",
+                            "start"
+                        ]
+                    },
+                    "id": "e3680597-223d-4eb4-bd2c-3dbeeb3a6fcb"
+                },
+                {
+                    "command": "EVENT_CHOICE",
+                    "args": {
+                        "variable": "L0",
+                        "trueText": "Neues Spiel",
+                        "falseText": "Danksagungen"
+                    },
+                    "id": "d152c139-b817-440a-9414-7df1f48de28d"
+                },
+                {
+                    "command": "EVENT_IF_TRUE",
+                    "args": {
+                        "variable": "L0",
+                        "__collapseElse": false
+                    },
+                    "children": {
+                        "true": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "9c9cf542-d53e-41c0-8028-059d38451ef7",
+                                    "x": 4,
+                                    "y": 12,
+                                    "direction": "",
+                                    "fadeSpeed": "2"
+                                },
+                                "id": "bbaf31cd-4a0c-420d-a5b9-7b17bf404b59"
+                            }
+                        ],
+                        "false": [
+                            {
+                                "command": "EVENT_SWITCH_SCENE",
+                                "args": {
+                                    "sceneId": "3aa697b9-157e-42b1-884b-e4078ee7dd72",
+                                    "x": 7,
+                                    "y": 12,
+                                    "direction": "",
+                                    "fadeSpeed": "2"
+                                },
+                                "id": "6d2eb50d-716e-4c03-a978-29c6dc3c5ccb"
+                            }
+                        ]
+                    },
+                    "id": "095c6c64-3367-4d50-b6f6-bb062776f505"
                 }
             ],
             "playerHit1Script": [],
@@ -18458,194 +18513,932 @@
     ],
     "music": [
         {
+            "id": "b538ed14-6b2e-4bc4-93c1-eae44d2cfe52",
+            "name": "Action/Boss fight1",
+            "symbol": "song_action_boss_fight1",
+            "filename": "Action/Boss fight1.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "64f8f057-4c50-46ec-9c70-cbb0e51dcd21",
+            "name": "Action/Boss fight2",
+            "symbol": "song_action_boss_fight2",
+            "filename": "Action/Boss fight2.mod",
+            "settings": {
+                "disableSpeedConversion": false
+            },
+            "type": "mod"
+        },
+        {
+            "id": "d4d2c307-5d2a-47a4-a63a-eb01f183fd79",
+            "name": "Action/Compression",
+            "symbol": "song_action_compression",
+            "filename": "Action/Compression.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "800674b0-1f42-45b9-ac6c-a54832a31d8a",
+            "name": "Action/Dancing and Infiltrating",
+            "symbol": "song_action_dancing_and_inf",
+            "filename": "Action/Dancing and Infiltrating.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "5b6199bd-9c10-461a-9990-2825c8a0b7be",
+            "name": "Action/Free OST 1 - Backstreets",
+            "symbol": "song_action_free_ost_1_back",
+            "filename": "Action/Free OST 1 - Backstreets.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "556b43fc-ff7e-4a94-85b2-bbf96ceaca2e",
+            "name": "Action/Free OST 1 - Fighting",
+            "symbol": "song_action_free_ost_1_figh",
+            "filename": "Action/Free OST 1 - Fighting.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "0fd854df-6c79-4f75-93a1-6340c0c926d5",
+            "name": "Action/Joyous Takeoff",
+            "symbol": "song_action_joyous_takeoff",
+            "filename": "Action/Joyous Takeoff.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "ba2ec5b3-68ad-407b-ba5e-28d4f883ce6c",
+            "name": "Action/Monty's Overheating Spaceship",
+            "symbol": "song_action_monty_s_overhea",
+            "filename": "Action/Monty's Overheating Spaceship.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "4e800372-78bd-4740-a966-1e2f6ebde3e5",
+            "name": "Action/Serious Ping Pong Matches",
+            "symbol": "song_action_serious_ping_po",
+            "filename": "Action/Serious Ping Pong Matches.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "04646ed8-4d32-4c87-aae2-d4e0bcc7d6fe",
+            "name": "Action/Sneaking Around",
+            "symbol": "song_action_sneaking_around",
+            "filename": "Action/Sneaking Around.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "47e306ad-2e52-45a9-b976-d3c05b93fd22",
+            "name": "Action/Sugar Craze",
+            "symbol": "song_action_sugar_craze",
+            "filename": "Action/Sugar Craze.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "340a5861-60be-466e-9f50-9eee3e6e204e",
+            "name": "Action/Tape It Together",
+            "symbol": "song_action_tape_it_togethe",
+            "filename": "Action/Tape It Together.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "8d238e65-d81c-4fb9-bb81-a68e92432d7d",
+            "name": "Action/Tense Boss Battle",
+            "symbol": "song_action_tense_boss_batt",
+            "filename": "Action/Tense Boss Battle.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "c53c2ba6-edbd-4e3e-8fdf-3ebb0fdc6aeb",
+            "name": "Drumbeats/Backbeat Metal Drumming",
+            "symbol": "song_drumbeats_backbeat_met",
+            "filename": "Drumbeats/Backbeat Metal Drumming.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "a41342f2-c796-4059-bdb1-3d5649d4f9af",
+            "name": "Drumbeats/Boots Cats",
+            "symbol": "song_drumbeats_boots_cats",
+            "filename": "Drumbeats/Boots Cats.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "795de877-065b-4b58-b435-bb0e6b7bf29c",
+            "name": "Drumbeats/Breakbeat with Hats",
+            "symbol": "song_drumbeats_breakbeat_wi",
+            "filename": "Drumbeats/Breakbeat with Hats.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "d8285b56-55bd-49b5-8b9f-9195108284a9",
+            "name": "Drumbeats/Duck Tales Drumbeat",
+            "symbol": "song_drumbeats_duck_tales_d",
+            "filename": "Drumbeats/Duck Tales Drumbeat.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "03de2e14-36b2-4ac9-9538-cf5f2bc92007",
+            "name": "Drumbeats/Halftime Metal Drumming",
+            "symbol": "song_drumbeats_halftime_met",
+            "filename": "Drumbeats/Halftime Metal Drumming.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "60e3c149-2739-4ab5-97c7-c1abf6e90870",
+            "name": "Drumbeats/Kick Kick Kick Crash",
+            "symbol": "song_drumbeats_kick_kick_ki",
+            "filename": "Drumbeats/Kick Kick Kick Crash.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "a0f1fc14-bd12-484b-a2af-beb9dad3bdc1",
+            "name": "Drumbeats/Kick Kick Snare",
+            "symbol": "song_drumbeats_kick_kick_sn",
+            "filename": "Drumbeats/Kick Kick Snare.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "a185b6ec-9a81-4656-b709-40682af5b47f",
+            "name": "Drumbeats/Kick Stutter",
+            "symbol": "song_drumbeats_kick_stutter",
+            "filename": "Drumbeats/Kick Stutter.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "924163dd-6198-4116-95ce-d2c5be52765c",
+            "name": "Drumbeats/Messy 90s Uptempo Hiphop",
+            "symbol": "song_drumbeats_messy_90s_up",
+            "filename": "Drumbeats/Messy 90s Uptempo Hiphop.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "5f4abf82-e9fd-4042-9806-e719e976a327",
+            "name": "Drumbeats/Supa-Hip Breakbeat",
+            "symbol": "song_drumbeats_supa_hip_bre",
+            "filename": "Drumbeats/Supa-Hip Breakbeat.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "97fa3a77-b255-4210-bfbd-32b4421299a3",
+            "name": "Drumbeats/Upbeat Metal Drumming",
+            "symbol": "song_drumbeats_upbeat_metal",
+            "filename": "Drumbeats/Upbeat Metal Drumming.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "ef1c7588-a511-46c1-9a80-9c2c3eef561a",
+            "name": "Exploration/Determined",
+            "symbol": "song_exploration_determined",
+            "filename": "Exploration/Determined.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "1723e776-e184-4d38-be66-ca6b5265bfd3",
+            "name": "Exploration/Peppy Pop Song",
+            "symbol": "song_exploration_peppy_pop_",
+            "filename": "Exploration/Peppy Pop Song.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "0bc93897-641b-419b-af5e-5ec9cee1705d",
+            "name": "Exploration/Scrolling Text",
+            "symbol": "song_exploration_scrolling_",
+            "filename": "Exploration/Scrolling Text.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "1827700b-e034-4e56-8630-d43431d8fb4d",
+            "name": "Exploration/Twilight Drive",
+            "symbol": "song_exploration_twilight_d",
+            "filename": "Exploration/Twilight Drive.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "847df4c2-4c1a-47db-ad91-6a1d6f7ef2d0",
+            "name": "Jingles/Awkward Death",
+            "symbol": "song_jingles_awkward_death",
+            "filename": "Jingles/Awkward Death.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "1fd442ca-2bdd-4b95-991a-e8d96245f570",
+            "name": "Jingles/Battle Encounter",
+            "symbol": "song_jingles_battle_encount",
+            "filename": "Jingles/Battle Encounter.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "b4dfe200-7528-4ea6-948e-d6c98b69e506",
+            "name": "Jingles/Battle Motif",
+            "symbol": "song_jingles_battle_motif",
+            "filename": "Jingles/Battle Motif.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "6efded52-955b-4a30-87c1-8d8419cb8aa1",
+            "name": "Jingles/Excited Suspense",
+            "symbol": "song_jingles_excited_suspen",
+            "filename": "Jingles/Excited Suspense.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "7dff1aba-7b53-437c-a12d-a2719dd2624e",
+            "name": "Jingles/Falling Asleep",
+            "symbol": "song_jingles_falling_asleep",
+            "filename": "Jingles/Falling Asleep.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "d1bdc6d4-1344-47ef-9ec6-34daba04084f",
+            "name": "Jingles/Nursery Rhyme with pauses",
+            "symbol": "song_jingles_nursery_rhyme_",
+            "filename": "Jingles/Nursery Rhyme with pauses.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "3aa9c0a3-e0c4-476e-b5fb-afb3b43d7044",
+            "name": "Jingles/Out of Energy Game Over",
+            "symbol": "song_jingles_out_of_energy_",
+            "filename": "Jingles/Out of Energy Game Over.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "8b48868f-284e-4da2-a87f-3834e29c437b",
+            "name": "Jingles/Pitfall Death",
+            "symbol": "song_jingles_pitfall_death",
+            "filename": "Jingles/Pitfall Death.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "b9eba3b0-9f10-49d1-872e-730126063d18",
+            "name": "Jingles/Radical Intro",
+            "symbol": "song_jingles_radical_intro",
+            "filename": "Jingles/Radical Intro.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "cbc5af6e-ca41-42a4-998a-93653201e7f8",
+            "name": "Jingles/Radical Victory",
+            "symbol": "song_jingles_radical_victor",
+            "filename": "Jingles/Radical Victory.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "2dbd8d12-b7f6-44da-afe5-fd8d432c5603",
+            "name": "Jingles/Rascal's Ditty",
+            "symbol": "song_jingles_rascal_s_ditty",
+            "filename": "Jingles/Rascal's Ditty.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "97a9ab2f-d51e-4126-95fa-ec566acbce48",
+            "name": "Jingles/Short Lullaby with Keyulation.mod",
+            "symbol": "song_jingles_short_lullaby_",
+            "filename": "Jingles/Short Lullaby with Key Modulation.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "7a63d73c-c7ae-441f-83d3-74bb10e92779",
+            "name": "Jingles/Short SML2-Style Jingle",
+            "symbol": "song_jingles_short_sml2_sty",
+            "filename": "Jingles/Short SML2-Style Jingle.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "61bdd65a-e8af-4ac6-843b-5a185ec2411c",
+            "name": "Jingles/Silly Death",
+            "symbol": "song_jingles_silly_death",
+            "filename": "Jingles/Silly Death.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "0db5556f-c438-47f6-93ec-e7591bf41081",
+            "name": "Jingles/Slow death",
+            "symbol": "song_jingles_slow_death",
+            "filename": "Jingles/Slow death.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "c1a6d8dc-7323-4bd2-9ce3-7a87f4bcb17f",
+            "name": "Jingles/Swing into Victory",
+            "symbol": "song_jingles_swing_into_vic",
+            "filename": "Jingles/Swing into Victory.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "9296c17e-17a7-4d2b-a19a-88287c01eef3",
+            "name": "Jingles/The Sad Truth",
+            "symbol": "song_jingles_the_sad_truth",
+            "filename": "Jingles/The Sad Truth.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "07d2a578-0c99-4171-975d-484ce1a19cb8",
+            "name": "Jingles/Victory Fanfare",
+            "symbol": "song_jingles_victory_fanfar",
+            "filename": "Jingles/Victory Fanfare.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "0aa8ee0c-9e31-46ac-a046-dc002ac6cefa",
+            "name": "Jingles/Victory Lap",
+            "symbol": "song_jingles_victory_lap",
+            "filename": "Jingles/Victory Lap.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "2eaeed55-8fa4-4761-80d2-36e8d175c297",
+            "name": "Menu Themes/Free OST 1 - Character Select",
+            "symbol": "song_menu_themes_free_ost_1",
+            "filename": "Menu Themes/Free OST 1 - Character Select.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "01937772-f48f-4b90-8e53-8794ba729cff",
+            "name": "Menu Themes/Free OST 1 - Ending Theme",
+            "symbol": "song_menu_themes_free_ost_0",
+            "filename": "Menu Themes/Free OST 1 - Ending Theme.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "bf47cfbf-2951-4b46-95d9-da5b9a46316a",
+            "name": "Menu Themes/Free OST 1 - Fanfare",
+            "symbol": "song_menu_themes_free_ost_2",
+            "filename": "Menu Themes/Free OST 1 - Fanfare.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "e434626e-ee46-4af2-8d83-a423d7122295",
+            "name": "Menu Themes/MBR Settings",
+            "symbol": "song_menu_themes_mbr_settin",
+            "filename": "Menu Themes/MBR Settings.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "eefbee38-a23b-4891-973e-c1d0ee9be6fe",
+            "name": "National Anthems/France Intro",
+            "symbol": "song_national_anthems_franc",
+            "filename": "National Anthems/France Intro.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "5deb60bc-1d31-41b2-a393-d62bbe432c2b",
+            "name": "National Anthems/Germany Intro",
+            "symbol": "song_national_anthems_germa",
+            "filename": "National Anthems/Germany Intro.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "6d5cab2d-c46c-4a87-8118-6d130acf6c46",
+            "name": "National Anthems/Italy Intro",
+            "symbol": "song_national_anthems_italy",
+            "filename": "National Anthems/Italy Intro.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "0d9e7cb8-250b-4184-868d-6b3d5d98f2f1",
+            "name": "National Anthems/United Kingdom Intro",
+            "symbol": "song_national_anthems_unite",
+            "filename": "National Anthems/United Kingdom Intro.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "522d79b6-d642-4158-a41e-217bf7a6164f",
+            "name": "National Anthems/United States of America Intro",
+            "symbol": "song_national_anthems_unite_0",
+            "filename": "National Anthems/United States of America Intro.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "1bbce32d-13af-40ff-a482-079fa1796325",
+            "name": "Overworld/Darkstone",
+            "symbol": "song_overworld_darkstone",
+            "filename": "Overworld/Darkstone.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "ee5184d2-b5e1-4313-aaa6-529d7709f521",
+            "name": "Overworld/Darkstone_Remix",
+            "symbol": "song_overworld_darkstone_re",
+            "filename": "Overworld/Darkstone_Remix.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "9ec67f55-b62b-4ead-ad83-8e658a15637e",
+            "name": "Overworld/FridgeMusic",
+            "symbol": "song_overworld_fridgemusic",
+            "filename": "Overworld/FridgeMusic.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "b0ec202a-1703-4a4b-95bf-9406b5958d1d",
+            "name": "Overworld/Great Melody 01",
+            "symbol": "song_overworld_great_melody_0",
+            "filename": "Overworld/Great Melody 01.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "5321a409-9a34-45d7-bc5e-1b829c59a645",
+            "name": "Overworld/Great Melody02",
+            "symbol": "song_overworld_great_melody",
+            "filename": "Overworld/Great Melody02.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "cd47f6f2-dff6-4d3c-846d-d8c6fa019d98",
+            "name": "Overworld/In the Town",
+            "symbol": "song_overworld_in_the_town",
+            "filename": "Overworld/In the Town.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "dbeb6d40-e391-4208-93d5-f168769509e4",
+            "name": "Overworld/Little Tune 11",
+            "symbol": "song_overworld_little_tune_",
+            "filename": "Overworld/Little Tune 11.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "cb622110-aa9b-4298-826e-ad1855bc7a6f",
+            "name": "Overworld/ParkMusic",
+            "symbol": "song_overworld_parkmusic",
+            "filename": "Overworld/ParkMusic.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "c88d46e0-5626-49ff-8a66-1a488afc0e1b",
+            "name": "Overworld/Peppy Regal Overworld",
+            "symbol": "song_overworld_peppy_regal_",
+            "filename": "Overworld/Peppy Regal Overworld.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "4e74569c-e311-42fc-8ed5-40303a491a30",
+            "name": "Overworld/The Gang's All Here",
+            "symbol": "song_overworld_the_gang_s_a",
+            "filename": "Overworld/The Gang's All Here.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "a8826942-8b96-460b-ac63-f2fa7b0cbf7d",
+            "name": "Overworld/Villains of Hiphop",
+            "symbol": "song_overworld_villains_of_",
+            "filename": "Overworld/Villains of Hiphop.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "5bdeaeca-ee39-41d5-b242-20f7fa38e04a",
+            "name": "SFX/Alarm Clock",
+            "symbol": "song_sfx_alarm_clock",
+            "filename": "SFX/Alarm Clock.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "947f5bde-72ee-4570-9526-a2e9ff41759f",
+            "name": "SFX/Alarm System",
+            "symbol": "song_sfx_alarm_system",
+            "filename": "SFX/Alarm System.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "b546cb54-bb8f-451c-9016-37f7e7331be7",
+            "name": "SFX/Clock",
+            "symbol": "song_sfx_clock",
+            "filename": "SFX/Clock.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "1b60e5da-ff3f-49e1-b0bb-6427188b27c2",
+            "name": "SFX/Clock2",
+            "symbol": "song_sfx_clock2",
+            "filename": "SFX/Clock2.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "c9c4a342-ebd8-43a9-9235-f8e9bc71cd8f",
+            "name": "SFX/EuroCop",
+            "symbol": "song_sfx_eurocop",
+            "filename": "SFX/EuroCop.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "073ef4fa-2a3f-42b8-a844-430aea3af820",
+            "name": "SFX/Explosion1",
+            "symbol": "song_sfx_explosion1",
+            "filename": "SFX/Explosion1.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "bffbec29-08d9-4dec-af62-4d945528db04",
+            "name": "SFX/Missile Alert",
+            "symbol": "song_sfx_missile_alert",
+            "filename": "SFX/Missile Alert.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "fe4c41ec-4eb3-4efd-9596-8e39559436c1",
+            "name": "SFX/Nokia Tune",
+            "symbol": "song_sfx_nokia_tune",
+            "filename": "SFX/Nokia Tune.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "2bf93aff-a382-4b18-aa85-f29dded6c7cb",
+            "name": "SFX/Phone Ring",
+            "symbol": "song_sfx_phone_ring",
+            "filename": "SFX/Phone Ring.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "44051754-ddfe-4886-9ec8-c1ecb391cac3",
+            "name": "SFX/Pickup_Coin",
+            "symbol": "song_sfx_pickup_coin",
+            "filename": "SFX/Pickup_Coin.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "cd0f2c6f-5772-48c1-a53e-4bd58eac2cd6",
+            "name": "SFX/Powerup",
+            "symbol": "song_sfx_powerup",
+            "filename": "SFX/Powerup.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "3841c398-769a-4cab-87d2-02d3d1896c7b",
+            "name": "SFX/Powerup2",
+            "symbol": "song_sfx_powerup2",
+            "filename": "SFX/Powerup2.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "ca936451-16a1-43c8-9c85-2df44f0f00a2",
+            "name": "SFX/Powerup3",
+            "symbol": "song_sfx_powerup3",
+            "filename": "SFX/Powerup3.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "ccb127f5-3e76-47e7-b907-5947a4f8696c",
+            "name": "SFX/Squeal Door",
+            "symbol": "song_sfx_squeal_door",
+            "filename": "SFX/Squeal Door.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "18b66d5a-77d4-4574-a329-0ca2a67d0698",
+            "name": "SFX/Vibration Alarm",
+            "symbol": "song_sfx_vibration_alarm",
+            "filename": "SFX/Vibration Alarm.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "9d56ae8d-3e3c-4137-8438-048b4de58d2e",
+            "name": "SFX/fast wind gust",
+            "symbol": "song_sfx_fast_wind_gust",
+            "filename": "SFX/fast wind gust.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "1c676b55-a5e3-438c-b925-4a0341fba5f4",
+            "name": "SFX/harsh wind gust",
+            "symbol": "song_sfx_harsh_wind_gust",
+            "filename": "SFX/harsh wind gust.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "b2dd3a95-add9-4c39-a0b5-3f796112b505",
+            "name": "SFX/menu no thanks",
+            "symbol": "song_sfx_menu_no_thanks",
+            "filename": "SFX/menu no thanks.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "757af315-0711-4a1e-b5bd-015028118561",
+            "name": "SFX/nuh-uh",
+            "symbol": "song_sfx_nuh_uh",
+            "filename": "SFX/nuh-uh.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "a52b3f7e-c701-4ed0-af3e-3d63516addf0",
+            "name": "SFX/odd open inventory",
+            "symbol": "song_sfx_odd_open_inventory",
+            "filename": "SFX/odd open inventory.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "451bf211-e225-468c-8d04-8c2e22da58f2",
+            "name": "SFX/old telephone 1",
+            "symbol": "song_sfx_old_telephone_1",
+            "filename": "SFX/old telephone 1.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "93da4816-0d24-40fc-91b9-7b0bff12a2cd",
+            "name": "SFX/racecar zoom",
+            "symbol": "song_sfx_racecar_zoom",
+            "filename": "SFX/racecar zoom.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "fb0a1684-e015-44b3-9376-153ef269b65c",
+            "name": "SFX/smb3okay",
+            "symbol": "song_sfx_smb3okay",
+            "filename": "SFX/smb3okay.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "0efccdbe-9914-41e5-a8cd-d0c6d4d8335a",
+            "name": "Spooky/Detective Intro",
+            "symbol": "song_spooky_detective_intro",
+            "filename": "Spooky/Detective Intro.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
+            "id": "c9526388-b3d3-4592-9e4e-0e52e2365fe0",
+            "name": "Spooky/Short Hauntings",
+            "symbol": "song_spooky_short_hauntings",
+            "filename": "Spooky/Short Hauntings.mod",
+            "settings": {},
+            "type": "mod"
+        },
+        {
             "id": "05ef4530-7c73-4949-9a26-c61ff0df5f16",
-            "name": "Rulz_BattleTheme",
+            "name": "sample-project/Rulz_BattleTheme",
             "symbol": "song_rulz_battletheme",
-            "filename": "Rulz_BattleTheme.mod",
+            "filename": "sample-project/Rulz_BattleTheme.mod",
             "settings": {},
             "type": "mod"
         },
         {
             "id": "4e70bb53-9a1c-4236-8da8-5de56b3fbd6a",
-            "name": "Rulz_BattleTheme",
+            "name": "sample-project/Rulz_BattleTheme",
             "symbol": "song_rulz_battletheme_0",
-            "filename": "Rulz_BattleTheme.uge",
+            "filename": "sample-project/Rulz_BattleTheme.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "4653812c-82b6-44ce-93b8-eea1d4b6fa71",
-            "name": "Rulz_FastPaceSpeedRace",
+            "name": "sample-project/Rulz_FastPaceSpeedRace",
             "symbol": "song_rulz_fastpacespeedrace",
-            "filename": "Rulz_FastPaceSpeedRace.mod",
+            "filename": "sample-project/Rulz_FastPaceSpeedRace.mod",
             "settings": {},
             "type": "mod"
         },
         {
             "id": "a7c68b7f-00bc-4872-9ce8-fe5e62f9b565",
-            "name": "Rulz_FastPaceSpeedRace",
+            "name": "sample-project/Rulz_FastPaceSpeedRace",
             "symbol": "song_rulz_fastpacespeedrace_0",
-            "filename": "Rulz_FastPaceSpeedRace.uge",
+            "filename": "sample-project/Rulz_FastPaceSpeedRace.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "e571be0d-bbaa-44ae-a411-c2b2e6c5ff24",
-            "name": "Rulz_GonaSpace",
+            "name": "sample-project/Rulz_GonaSpace",
             "symbol": "song_rulz_gonaspace",
-            "filename": "Rulz_GonaSpace.mod",
+            "filename": "sample-project/Rulz_GonaSpace.mod",
             "settings": {},
             "type": "mod"
         },
         {
             "id": "46f8a9fd-46ca-4fbf-944c-4f981c7f3bde",
-            "name": "Rulz_GonaSpace",
+            "name": "sample-project/Rulz_GonaSpace",
             "symbol": "song_rulz_gonaspace_0",
-            "filename": "Rulz_GonaSpace.uge",
+            "filename": "sample-project/Rulz_GonaSpace.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "2e3e140a-ae8d-4970-8e8b-37b2119c7208",
-            "name": "Rulz_Into the woods",
+            "name": "sample-project/Rulz_Into the woods",
             "symbol": "song_rulz_into_the_woods",
-            "filename": "Rulz_Into the woods.mod",
+            "filename": "sample-project/Rulz_Into the woods.mod",
             "settings": {},
             "type": "mod"
         },
         {
             "id": "2fde4e03-8397-42a5-8d1e-a4f4e56816a1",
-            "name": "Rulz_Into the woods",
+            "name": "sample-project/Rulz_Into the woods",
             "symbol": "song_rulz_into_the_woods_0",
-            "filename": "Rulz_Into the woods.uge",
+            "filename": "sample-project/Rulz_Into the woods.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "83b79b0b-6af5-4a01-ac40-2f86fd36ece8",
-            "name": "Rulz_Intro",
+            "name": "sample-project/Rulz_Intro",
             "symbol": "song_rulz_intro",
-            "filename": "Rulz_Intro.mod",
+            "filename": "sample-project/Rulz_Intro.mod",
             "settings": {},
             "type": "mod"
         },
         {
             "id": "4f144f63-6005-4e99-b570-92a526201bd3",
-            "name": "Rulz_Intro",
+            "name": "sample-project/Rulz_Intro",
             "symbol": "song_rulz_intro_0",
-            "filename": "Rulz_Intro.uge",
+            "filename": "sample-project/Rulz_Intro.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "0f78c331-7318-48ca-8a6c-a57c15ef423a",
-            "name": "Rulz_LightMood",
+            "name": "sample-project/Rulz_LightMood",
             "symbol": "song_rulz_lightmood",
-            "filename": "Rulz_LightMood.mod",
+            "filename": "sample-project/Rulz_LightMood.mod",
             "settings": {},
             "type": "mod"
         },
         {
             "id": "326b3cbc-1e3d-4a43-846f-c962ece2c317",
-            "name": "Rulz_LightMood",
+            "name": "sample-project/Rulz_LightMood",
             "symbol": "song_rulz_lightmood_0",
-            "filename": "Rulz_LightMood.uge",
+            "filename": "sample-project/Rulz_LightMood.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "180f6b13-2ccc-4af9-8ebf-3e3931f2e824",
-            "name": "Rulz_Outside",
+            "name": "sample-project/Rulz_Outside",
             "symbol": "song_rulz_outside",
-            "filename": "Rulz_Outside.mod",
+            "filename": "sample-project/Rulz_Outside.mod",
             "settings": {},
             "type": "mod"
         },
         {
             "id": "9aac47ff-51d7-48bf-9f15-1ce01b3872a4",
-            "name": "Rulz_Outside",
+            "name": "sample-project/Rulz_Outside",
             "symbol": "song_rulz_outside_0",
-            "filename": "Rulz_Outside.uge",
+            "filename": "sample-project/Rulz_Outside.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "a98fc4b6-810e-4fb7-93ee-ef17be6ce95a",
-            "name": "Rulz_Pause_Underground",
+            "name": "sample-project/Rulz_Pause_Underground",
             "symbol": "song_rulz_pause_underground",
-            "filename": "Rulz_Pause_Underground.mod",
+            "filename": "sample-project/Rulz_Pause_Underground.mod",
             "settings": {},
             "type": "mod"
         },
         {
             "id": "a48b4a96-9a5a-4511-b38a-98d56dd996ba",
-            "name": "Rulz_Pause_Underground",
+            "name": "sample-project/Rulz_Pause_Underground",
             "symbol": "song_rulz_pause_underground_0",
-            "filename": "Rulz_Pause_Underground.uge",
+            "filename": "sample-project/Rulz_Pause_Underground.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "be5e3dd0-dc4f-46b3-aefe-9897de0775c3",
-            "name": "Rulz_SpaceEmergency",
+            "name": "sample-project/Rulz_SpaceEmergency",
             "symbol": "song_rulz_spaceemergency",
-            "filename": "Rulz_SpaceEmergency.mod",
+            "filename": "sample-project/Rulz_SpaceEmergency.mod",
             "settings": {},
             "type": "mod"
         },
         {
             "id": "0635da5d-4c5a-46c1-a946-1634056bdd95",
-            "name": "Rulz_SpaceEmergency",
+            "name": "sample-project/Rulz_SpaceEmergency",
             "symbol": "song_rulz_spaceemergency_0",
-            "filename": "Rulz_SpaceEmergency.uge",
+            "filename": "sample-project/Rulz_SpaceEmergency.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "4f7446cc-f5b4-4749-8fd0-f587afe35747",
-            "name": "Rulz_UndergroundCave",
+            "name": "sample-project/Rulz_UndergroundCave",
             "symbol": "song_rulz_undergroundcave",
-            "filename": "Rulz_UndergroundCave.mod",
+            "filename": "sample-project/Rulz_UndergroundCave.mod",
             "settings": {},
             "type": "mod"
         },
         {
             "id": "b64b574c-2ba2-428f-925f-8aff5a299af2",
-            "name": "Rulz_UndergroundCave",
+            "name": "sample-project/Rulz_UndergroundCave",
             "symbol": "song_rulz_undergroundcave_0",
-            "filename": "Rulz_UndergroundCave.uge",
+            "filename": "sample-project/Rulz_UndergroundCave.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "9e63fcea-bb03-4921-81df-6f223d2044ad",
-            "name": "Tronimal_DrumsExample",
+            "name": "sample-project/Tronimal_DrumsExample",
             "symbol": "song_drum_example",
-            "filename": "Tronimal_DrumsExample.uge",
+            "filename": "sample-project/Tronimal_DrumsExample.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "a3129a0f-f3ee-482c-a60b-3066698541e6",
-            "name": "Tronimal_EchoExample",
+            "name": "sample-project/Tronimal_EchoExample",
             "symbol": "song_echo_example",
-            "filename": "Tronimal_EchoExample.uge",
+            "filename": "sample-project/Tronimal_EchoExample.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "3820da59-88a7-4caa-83e4-e74f8883ff71",
-            "name": "song_template",
+            "name": "sample-project/song_template",
             "symbol": "song_song_template",
-            "filename": "song_template.uge",
+            "filename": "sample-project/song_template.uge",
             "settings": {},
             "type": "uge"
         },
         {
             "id": "f50428ab-a084-4591-9bba-2ba10fe7b1c6",
-            "name": "template",
+            "name": "sample-project/template",
             "symbol": "song_template",
-            "filename": "template.mod",
+            "filename": "sample-project/template.mod",
             "settings": {},
             "type": "mod"
         }
@@ -18892,6 +19685,11 @@
             "id": "f133f79e-677a-496c-9b77-efec52f500e4__L0",
             "name": "got_catnip",
             "symbol": "var_got_catnip"
+        },
+        {
+            "id": "9883babd-c96b-4447-9de2-8887ec5c5e6b__L0",
+            "name": "menu-selection",
+            "symbol": "var_menu_selection"
         }
     ],
     "engineFieldValues": [
@@ -18905,15 +19703,15 @@
         }
     ],
     "settings": {
-        "startSceneId": "9c9cf542-d53e-41c0-8028-059d38451ef7",
-        "startX": 4,
-        "startY": 13,
+        "startSceneId": "9883babd-c96b-4447-9de2-8887ec5c5e6b",
+        "startX": 7,
+        "startY": 8,
         "startMoveSpeed": 1,
         "startAnimSpeed": 15,
         "startDirection": "right",
         "showCollisions": true,
         "showConnections": true,
-        "worldScrollX": 34,
+        "worldScrollX": 258,
         "worldScrollY": 0,
         "zoom": 53.54691426642239,
         "customColorsEnabled": true,
@@ -18958,7 +19756,7 @@
             "POINTNCLICK": "",
             "LOGO": "282d4b22-6359-4c4a-a4de-01a92fcf0641"
         },
-        "musicDriver": "huge",
+        "musicDriver": "gbt",
         "cartType": "mbc5",
         "batterylessEnabled": false,
         "favoriteEvents": [
