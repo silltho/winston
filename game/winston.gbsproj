@@ -6071,21 +6071,11 @@
                                         "id": "bfa04a31-d719-4480-a35a-2c3892fb6e00"
                                     },
                                     {
-                                        "command": "EVENT_INC_VALUE",
+                                        "command": "EVENT_CALL_CUSTOM_EVENT",
                                         "args": {
-                                            "variable": "1"
+                                            "customEventId": "bf587fc3-a5bf-411d-83a5-77751aa4d47e"
                                         },
-                                        "id": "53acd918-9df9-450d-a772-a5bf7ff35dd5"
-                                    },
-                                    {
-                                        "command": "EVENT_TEXT",
-                                        "args": {
-                                            "text": [
-                                                "Du hast jetzt $01$ \nSnackos!"
-                                            ],
-                                            "avatarId": ""
-                                        },
-                                        "id": "60ac040a-342d-401d-988b-c43b263099b3"
+                                        "id": "7cbb1fc1-868b-47ea-bb92-0b83c0cd7880"
                                     },
                                     {
                                         "command": "EVENT_SET_TRUE",
@@ -8927,7 +8917,7 @@
             "backgroundId": "238de0b5-949b-47e0-8d3f-2b989998bedd",
             "width": 20,
             "height": 18,
-            "type": "LOGO",
+            "type": "TOPDOWN",
             "paletteIds": [],
             "spritePaletteIds": [],
             "collisions": [
@@ -9409,6 +9399,17 @@
                             }
                         ],
                         "true2": [
+                            {
+                                "command": "EVENT_SET_VALUE",
+                                "args": {
+                                    "variable": "17",
+                                    "value": {
+                                        "type": "number",
+                                        "value": 301
+                                    }
+                                },
+                                "id": "fb595125-a20c-4631-9226-a55630dcbc05"
+                            },
                             {
                                 "command": "EVENT_SWITCH_SCENE",
                                 "args": {
@@ -10342,7 +10343,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Gewonnen"
+                                    "Du hast es über \ndie Straße geschafft!"
                                 ],
                                 "avatarId": ""
                             },
@@ -10805,11 +10806,11 @@
                     "children": {
                         "true": [
                             {
-                                "command": "EVENT_ACTOR_DEACTIVATE",
+                                "command": "EVENT_ACTOR_ACTIVATE",
                                 "args": {
                                     "actorId": "68496400-45f9-4221-af13-fa86e4ab53cc"
                                 },
-                                "id": "bc379637-67b6-4bcc-81fe-9ccfc760276a"
+                                "id": "42908c5c-b956-4ff7-ae65-a42a2386ba56"
                             },
                             {
                                 "command": "EVENT_ACTOR_MOVE_TO",
@@ -10829,13 +10830,21 @@
                                 "id": "67306771-1374-4f56-9e73-bdf9b94a6382"
                             },
                             {
+                                "command": "EVENT_ACTOR_HIDE",
+                                "args": {
+                                    "actorId": "68496400-45f9-4221-af13-fa86e4ab53cc"
+                                },
+                                "id": "a7ff93cd-e04e-4135-9f0c-fad9ddcc613d"
+                            },
+                            {
                                 "command": "EVENT_SET_VALUE",
                                 "args": {
                                     "variable": "17",
                                     "value": {
                                         "type": "number",
                                         "value": 302
-                                    }
+                                    },
+                                    "__comment": false
                                 },
                                 "id": "7383bf53-a3ca-4ba6-8b91-5976546bd887"
                             }
@@ -11720,34 +11729,33 @@
                     "symbol": "actor_36",
                     "script": [
                         {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "Hallo Cousin Winnie"
+                                ],
+                                "nameTag": "Carina",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left",
+                                "__collapse": false
+                            },
+                            "id": "cb9942a6-07ad-4e6b-a4f5-29938685234e"
+                        },
+                        {
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "6",
                                 "__collapseElse": false
                             },
                             "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
-                                        "args": {
-                                            "__scriptTabs": "text",
-                                            "text": [
-                                                "Hallo Cousin Winnie"
-                                            ],
-                                            "nameTag": "Carina",
-                                            "nameX": 2,
-                                            "avatarType": "small",
-                                            "avatarId": "",
-                                            "largeAvatar": "",
-                                            "avatarX": 2,
-                                            "avatarY": 2,
-                                            "avatarWidth": 3,
-                                            "orientation": "left",
-                                            "__collapse": true
-                                        },
-                                        "id": "cb9942a6-07ad-4e6b-a4f5-29938685234e"
-                                    }
-                                ],
+                                "true": [],
                                 "false": [
                                     {
                                         "command": "EVENT_ACTOR_EMOTE",
@@ -11763,7 +11771,8 @@
                                         "args": {
                                             "__scriptTabs": "text",
                                             "text": [
-                                                "Leute sie kommt! Winnie bitte bleib kurz ruhig und schau uns zu."
+                                                "Bitte warte kurz.",
+                                                "Leute sie kommt!"
                                             ],
                                             "nameTag": "Carina",
                                             "nameX": 2,
@@ -12025,7 +12034,9 @@
                             "args": {
                                 "__scriptTabs": "text",
                                 "text": [
-                                    "Wo ist der Winnie? Wo ist der Winnie? Da ist der Winnie!"
+                                    "Wo ist der Winnie?",
+                                    "Wo ist der Winnie? ",
+                                    "Da ist der Winnie!"
                                 ],
                                 "nameTag": "Harald",
                                 "nameX": 2,
@@ -12068,7 +12079,8 @@
                             "args": {
                                 "__scriptTabs": "text",
                                 "text": [
-                                    "Ja hallo Winston wie geht es dir?"
+                                    "Ja hallo Winston",
+                                    "Wie geht es dir?"
                                 ],
                                 "nameTag": "Monika",
                                 "nameX": 2,
@@ -13348,6 +13360,44 @@
                                 "false": []
                             },
                             "id": "6ed2e509-ac10-4e63-8549-1e7b52e15c8c"
+                        }
+                    ],
+                    "leaveScript": []
+                },
+                {
+                    "name": "",
+                    "id": "dc6f2cb7-e217-43f6-983a-bd06693fb443",
+                    "x": 13,
+                    "y": 5,
+                    "symbol": "trigger_23",
+                    "width": 2,
+                    "height": 1,
+                    "script": [
+                        {
+                            "command": "EVENT_IF_VALUE",
+                            "args": {
+                                "variable": "17",
+                                "operator": "==",
+                                "comparator": 305,
+                                "__collapseElse": true
+                            },
+                            "children": {
+                                "true": [
+                                    {
+                                        "command": "EVENT_SWITCH_SCENE",
+                                        "args": {
+                                            "sceneId": "cfd921fa-b8c8-4fb7-a02d-36759e0a2f07",
+                                            "x": 27,
+                                            "y": 12,
+                                            "direction": "left",
+                                            "fadeSpeed": "2"
+                                        },
+                                        "id": "15fe7e04-c640-414c-b391-460fdedbd25d"
+                                    }
+                                ],
+                                "false": []
+                            },
+                            "id": "aa765ef5-44e6-4f85-807c-1194a0401132"
                         }
                     ],
                     "leaveScript": []
@@ -15230,6 +15280,1162 @@
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
+        },
+        {
+            "name": "epilog-1",
+            "backgroundId": "132693a8-9d52-4db3-be9a-8f3647d920e7",
+            "width": 30,
+            "height": 18,
+            "type": "TOPDOWN",
+            "paletteIds": [],
+            "spritePaletteIds": [],
+            "collisions": [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                0,
+                0,
+                15,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                0,
+                0,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15,
+                15
+            ],
+            "autoFadeSpeed": 1,
+            "id": "cfd921fa-b8c8-4fb7-a02d-36759e0a2f07",
+            "symbol": "scene_7",
+            "x": 1453.5164337077795,
+            "y": 917.086661108327,
+            "actors": [
+                {
+                    "name": "Rebecca",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "ac1e8ef4-ffe6-47cd-b16f-9af5da77ec26",
+                    "direction": "up",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_47",
+                    "script": [],
+                    "startScript": [
+                        {
+                            "command": "EVENT_ACTOR_HIDE",
+                            "args": {
+                                "actorId": "$self$"
+                            },
+                            "id": "00ea8f7a-800a-414b-ae92-4c0cd38cf232"
+                        }
+                    ],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "f8a3c1d9-5668-430e-b8c0-5d9932860af1",
+                    "x": 5,
+                    "y": 17
+                },
+                {
+                    "name": "Markus",
+                    "frame": 0,
+                    "animate": false,
+                    "spriteSheetId": "b747521f-ba81-4ea9-bf8f-7d4ad66d3f54",
+                    "direction": "right",
+                    "moveSpeed": 1,
+                    "animSpeed": 15,
+                    "paletteId": "",
+                    "isPinned": false,
+                    "persistent": false,
+                    "collisionGroup": "",
+                    "symbol": "actor_48",
+                    "script": [],
+                    "startScript": [],
+                    "updateScript": [],
+                    "hit1Script": [],
+                    "hit2Script": [],
+                    "hit3Script": [],
+                    "id": "2a92cbb8-b366-4e1c-8935-c9f21b2a99c5",
+                    "x": 5,
+                    "y": 12
+                }
+            ],
+            "triggers": [],
+            "script": [
+                {
+                    "command": "EVENT_ACTOR_MOVE_TO",
+                    "args": {
+                        "actorId": "$self$",
+                        "x": {
+                            "type": "number",
+                            "value": 18
+                        },
+                        "y": {
+                            "type": "number",
+                            "value": 12
+                        },
+                        "moveType": "horizontal",
+                        "useCollisions": false,
+                        "__collapse": true
+                    },
+                    "id": "a2fdac63-8921-4744-965e-6f26b1c8d420"
+                },
+                {
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "text": [
+                            "Hey winston",
+                            "Da bist du ja."
+                        ],
+                        "nameTag": "Markus",
+                        "nameX": 2,
+                        "avatarType": "small",
+                        "avatarId": "",
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
+                    },
+                    "id": "4ffe0203-c028-4120-afc5-3ae79768f504"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_TO",
+                    "args": {
+                        "actorId": "$self$",
+                        "x": {
+                            "type": "number",
+                            "value": 7
+                        },
+                        "y": {
+                            "type": "number",
+                            "value": 12
+                        },
+                        "moveType": "horizontal",
+                        "useCollisions": false,
+                        "__collapse": true
+                    },
+                    "id": "bfe4228a-abf5-4494-8c34-11e0b50aa9ab"
+                },
+                {
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "text": [
+                            "Ist das da in \ndeinem Maul etwa\n...",
+                            "der Ring!"
+                        ],
+                        "nameTag": "Markus",
+                        "nameX": 2,
+                        "avatarType": "small",
+                        "avatarId": "",
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
+                    },
+                    "id": "79493913-3ef7-4ed7-8c97-d8bca1ce0256"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                    "args": {
+                        "actorId": "player",
+                        "x": 2,
+                        "y": 0,
+                        "moveType": "horizontal",
+                        "useCollisions": false,
+                        "__collapse": true
+                    },
+                    "id": "235558e5-3356-471a-a693-99442172a693"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                    "args": {
+                        "actorId": "$self$",
+                        "direction": {
+                            "type": "direction",
+                            "value": "left"
+                        },
+                        "__collapse": true
+                    },
+                    "id": "adcc85aa-2a90-4d46-a761-aec04201f03d"
+                },
+                {
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "text": [
+                            "Na komm schon"
+                        ],
+                        "nameTag": "Markus",
+                        "nameX": 2,
+                        "avatarType": "small",
+                        "avatarId": "",
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
+                    },
+                    "id": "7a14be66-c534-4498-a952-7942130e0d53"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                    "args": {
+                        "actorId": "2a92cbb8-b366-4e1c-8935-c9f21b2a99c5",
+                        "x": 2,
+                        "y": 0,
+                        "moveType": "horizontal",
+                        "useCollisions": false,
+                        "__collapse": true
+                    },
+                    "id": "23dcc626-eb03-4eec-a3a0-63d06226497b"
+                },
+                {
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "text": [
+                            "Lass mal sehen"
+                        ],
+                        "nameTag": "Markus",
+                        "nameX": 2,
+                        "avatarType": "small",
+                        "avatarId": "",
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
+                    },
+                    "id": "cec5b143-1538-42b6-9f43-d0ea0058aa90"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                    "args": {
+                        "actorId": "$self$",
+                        "x": 2,
+                        "y": 0,
+                        "moveType": "horizontal",
+                        "useCollisions": false,
+                        "__collapse": true
+                    },
+                    "id": "18015701-dbff-428d-b571-90f129be0d0e"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                    "args": {
+                        "actorId": "$self$",
+                        "direction": {
+                            "type": "direction",
+                            "value": "left"
+                        },
+                        "__collapse": true
+                    },
+                    "id": "96fa903b-a5b1-4976-8f19-8b01cd5621ce"
+                },
+                {
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "text": [
+                            "Ich hab eine Idee!",
+                            "Winston lass uns \ntauschen.",
+                            "Schau ich hab\nhier einen Snacko \nfür dich!"
+                        ],
+                        "nameTag": "Markus",
+                        "nameX": 2,
+                        "avatarType": "small",
+                        "avatarId": "",
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
+                    },
+                    "id": "ca23d458-c69a-4880-bb38-35c1dbc1fdbb"
+                },
+                {
+                    "command": "EVENT_ACTOR_EMOTE",
+                    "args": {
+                        "actorId": "$self$",
+                        "emoteId": "c8d5eadd-dced-43df-8367-1e4d9bfc7923",
+                        "__collapse": true
+                    },
+                    "id": "b050fb0e-93da-4f96-a919-5b300ffbedbd"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                    "args": {
+                        "actorId": "$self$",
+                        "x": -2,
+                        "y": 0,
+                        "moveType": "horizontal",
+                        "useCollisions": false,
+                        "__collapse": true
+                    },
+                    "id": "1fc99c5d-4a37-4511-a74a-9c45b9edacbc"
+                },
+                {
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "text": [
+                            "Gott sei dank!",
+                            "In dem Ball\nist auch noch \nder Ring!",
+                            "Braver Winston das\nhast du gut \ngemacht",
+                            "Den Snacko hast du \ndir verdient."
+                        ],
+                        "nameTag": "Markus",
+                        "nameX": 2,
+                        "avatarType": "small",
+                        "avatarId": "",
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
+                    },
+                    "id": "4f153c7d-d33a-43a3-acb1-16f65bbf73c6"
+                },
+                {
+                    "command": "EVENT_CALL_CUSTOM_EVENT",
+                    "args": {
+                        "customEventId": "bf587fc3-a5bf-411d-83a5-77751aa4d47e",
+                        "__collapse": true
+                    },
+                    "id": "4063b6cc-798f-472b-b022-6707ba8f78a4"
+                },
+                {
+                    "command": "EVENT_ACTOR_SHOW",
+                    "args": {
+                        "actorId": "f8a3c1d9-5668-430e-b8c0-5d9932860af1",
+                        "__collapse": true
+                    },
+                    "id": "f16b7850-8823-4bbe-8674-8360de02ee76"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_TO",
+                    "args": {
+                        "actorId": "f8a3c1d9-5668-430e-b8c0-5d9932860af1",
+                        "x": {
+                            "type": "number",
+                            "value": 9
+                        },
+                        "y": {
+                            "type": "number",
+                            "value": 14
+                        },
+                        "moveType": "vertical",
+                        "useCollisions": false,
+                        "__collapse": true
+                    },
+                    "id": "9f599288-8ad1-4004-81e3-fffd2f13929f"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                    "args": {
+                        "actorId": "f8a3c1d9-5668-430e-b8c0-5d9932860af1",
+                        "direction": {
+                            "type": "direction",
+                            "value": "up"
+                        },
+                        "__collapse": true
+                    },
+                    "id": "c6a8ccd1-e2b3-4ef2-9d71-77ebe86e8fb7"
+                },
+                {
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "text": [
+                            "Wiston?!",
+                            "Bist du hier \num dich zu \nverabschieden?",
+                            "Das ist aber \nnett von dir.",
+                            "Machs gut und sei \nbrav wärend wir \nauf urlaub sind."
+                        ],
+                        "nameTag": "Rebecca",
+                        "nameX": 2,
+                        "avatarType": "small",
+                        "avatarId": "",
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
+                    },
+                    "id": "24553ee3-78d4-4ad2-a81b-1c4b28238be5"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                    "args": {
+                        "actorId": "f8a3c1d9-5668-430e-b8c0-5d9932860af1",
+                        "direction": {
+                            "type": "direction",
+                            "value": "left"
+                        },
+                        "__collapse": true
+                    },
+                    "id": "defca6c4-da76-49b0-ab22-70ae09f65af8"
+                },
+                {
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "text": [
+                            "Markus bist du \nbereit?"
+                        ],
+                        "nameTag": "Rebecca",
+                        "nameX": 2,
+                        "avatarType": "small",
+                        "avatarId": "",
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
+                    },
+                    "id": "170de97e-1991-4df8-aecd-efa3a352e0b1"
+                },
+                {
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "text": [
+                            "Geh schon mal vor.",
+                            "Ich verabschiede mich\nauch noch kurz von \nWinston."
+                        ],
+                        "nameTag": "Markus",
+                        "nameX": 2,
+                        "avatarType": "small",
+                        "avatarId": "",
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
+                    },
+                    "id": "439672f9-369b-4492-b7b9-4a9d2de770f9"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                    "args": {
+                        "actorId": "f8a3c1d9-5668-430e-b8c0-5d9932860af1",
+                        "direction": {
+                            "type": "direction",
+                            "value": "up"
+                        },
+                        "__collapse": true
+                    },
+                    "id": "2386bc59-71a1-4fcb-b850-4d821f1bff7f"
+                },
+                {
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "text": [
+                            "Ok eine letzte Umarmung \nWinston."
+                        ],
+                        "nameTag": "Rebecca",
+                        "nameX": 2,
+                        "avatarType": "small",
+                        "avatarId": "",
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
+                    },
+                    "id": "0630315a-c3f8-4a0f-9611-1457edac6029"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_TO",
+                    "args": {
+                        "actorId": "f8a3c1d9-5668-430e-b8c0-5d9932860af1",
+                        "x": {
+                            "type": "number",
+                            "value": 29
+                        },
+                        "y": {
+                            "type": "number",
+                            "value": 12
+                        },
+                        "moveType": "horizontal",
+                        "useCollisions": true,
+                        "__collapse": true
+                    },
+                    "id": "8031f22c-d6f5-4ecd-a904-50cca4ad3362"
+                },
+                {
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "f8a3c1d9-5668-430e-b8c0-5d9932860af1",
+                        "__collapse": true
+                    },
+                    "id": "bbbd4505-bd04-4db0-9199-722750d05bf8"
+                },
+                {
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "text": [
+                            "Puh fast hätte \nsie den Ring gesehen \ndas war knapp."
+                        ],
+                        "nameTag": "Markus",
+                        "nameX": 2,
+                        "avatarType": "small",
+                        "avatarId": "",
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
+                    },
+                    "id": "ec82fe7f-c165-4cae-9ff6-881facab00e9"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                    "args": {
+                        "actorId": "2a92cbb8-b366-4e1c-8935-c9f21b2a99c5",
+                        "x": 0,
+                        "y": 2,
+                        "moveType": "horizontal",
+                        "useCollisions": false,
+                        "__collapse": true
+                    },
+                    "id": "cb822e16-3d32-4525-b98f-b0a5d9643026"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                    "args": {
+                        "actorId": "2a92cbb8-b366-4e1c-8935-c9f21b2a99c5",
+                        "x": 4,
+                        "y": null,
+                        "moveType": "horizontal",
+                        "useCollisions": false,
+                        "__collapse": true
+                    },
+                    "id": "1643306b-cf82-4fae-990d-f810b7f56353"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_RELATIVE",
+                    "args": {
+                        "actorId": "2a92cbb8-b366-4e1c-8935-c9f21b2a99c5",
+                        "x": 0,
+                        "y": -2,
+                        "moveType": "horizontal",
+                        "useCollisions": false,
+                        "__collapse": true
+                    },
+                    "id": "675e6ce2-32d8-466c-b5d3-193a563cad5e"
+                },
+                {
+                    "command": "EVENT_ACTOR_SET_DIRECTION",
+                    "args": {
+                        "actorId": "2a92cbb8-b366-4e1c-8935-c9f21b2a99c5",
+                        "direction": {
+                            "type": "direction",
+                            "value": "left"
+                        },
+                        "__collapse": true
+                    },
+                    "id": "fdec0d22-a83f-4b65-8a0c-ac1e4d8a8aad"
+                },
+                {
+                    "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                    "args": {
+                        "__scriptTabs": "text",
+                        "text": [
+                            "Ich hoffe sie \nsagt ja.\nWünsch mir glück \nWinnie."
+                        ],
+                        "nameTag": "Markus",
+                        "nameX": 2,
+                        "avatarType": "small",
+                        "avatarId": "",
+                        "largeAvatar": "",
+                        "avatarX": 2,
+                        "avatarY": 2,
+                        "avatarWidth": 3,
+                        "orientation": "left",
+                        "__collapse": true
+                    },
+                    "id": "69c9c145-4ada-4b1a-b807-7d63f517a1ea"
+                },
+                {
+                    "command": "EVENT_ACTOR_MOVE_TO",
+                    "args": {
+                        "actorId": "2a92cbb8-b366-4e1c-8935-c9f21b2a99c5",
+                        "x": {
+                            "type": "number",
+                            "value": 29
+                        },
+                        "y": {
+                            "type": "number",
+                            "value": 12
+                        },
+                        "moveType": "horizontal",
+                        "useCollisions": false,
+                        "__collapse": true
+                    },
+                    "id": "33d31443-44c2-4a5d-961e-433c126c5570"
+                },
+                {
+                    "command": "EVENT_ACTOR_HIDE",
+                    "args": {
+                        "actorId": "2a92cbb8-b366-4e1c-8935-c9f21b2a99c5"
+                    },
+                    "id": "d7e8e12a-0bad-451f-bafa-c08dcbabedfe"
+                }
+            ],
+            "playerHit1Script": [],
+            "playerHit2Script": [],
+            "playerHit3Script": [],
+            "autoFadeEventCollapse": true
         }
     ],
     "backgrounds": [
@@ -15428,7 +16634,8 @@
             "height": 36,
             "imageWidth": 160,
             "imageHeight": 288,
-            "filename": "triathlon-ende.png"
+            "filename": "triathlon-ende.png",
+            "tileColors": []
         },
         {
             "id": "a80ecc7d-a29d-4d3d-931d-675a13f2b623",
@@ -41488,7 +42695,7 @@
                                 "command": "EVENT_TEXT",
                                 "args": {
                                     "text": [
-                                        "Kollision! Versuchs noch einmal.\n"
+                                        "Kollision! \nVersuchs noch einmal.\n"
                                     ],
                                     "avatarId": ""
                                 },
@@ -41557,6 +42764,33 @@
                         "avatarId": ""
                     },
                     "id": "b0d6042f-2b2a-4e0f-a97e-3cd017d8a317"
+                }
+            ]
+        },
+        {
+            "id": "bf587fc3-a5bf-411d-83a5-77751aa4d47e",
+            "name": "Increment Snacko",
+            "description": "Increment Snacko",
+            "variables": {},
+            "actors": {},
+            "symbol": "script_9",
+            "script": [
+                {
+                    "command": "EVENT_INC_VALUE",
+                    "args": {
+                        "variable": "1"
+                    },
+                    "id": "86696bd5-b1c2-49d0-b0d9-83885b2befc4"
+                },
+                {
+                    "command": "EVENT_TEXT",
+                    "args": {
+                        "text": [
+                            "Du hast jetzt $01$ \nSnackos!"
+                        ],
+                        "avatarId": ""
+                    },
+                    "id": "c583fbb1-4ced-40b4-b674-4629c8c57f91"
                 }
             ]
         }
@@ -43097,9 +44331,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 58,
-        "worldScrollY": 26,
-        "zoom": 48.44230881240219,
+        "worldScrollX": 1261,
+        "worldScrollY": 963,
+        "zoom": 109.99147514160722,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
@@ -43128,8 +44362,8 @@
         "playerPaletteId": "",
         "navigatorSplitSizes": [
             303,
-            177,
-            279
+            251,
+            205
         ],
         "showNavigator": true,
         "defaultFontId": "948c169c-8e4b-491c-a5f0-66898bbf45d9",
