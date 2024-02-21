@@ -11729,34 +11729,33 @@
                     "symbol": "actor_36",
                     "script": [
                         {
+                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                            "args": {
+                                "__scriptTabs": "text",
+                                "text": [
+                                    "Hallo Cousin Winnie"
+                                ],
+                                "nameTag": "Carina",
+                                "nameX": 2,
+                                "avatarType": "small",
+                                "avatarId": "",
+                                "largeAvatar": "",
+                                "avatarX": 2,
+                                "avatarY": 2,
+                                "avatarWidth": 3,
+                                "orientation": "left",
+                                "__collapse": false
+                            },
+                            "id": "cb9942a6-07ad-4e6b-a4f5-29938685234e"
+                        },
+                        {
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "6",
                                 "__collapseElse": false
                             },
                             "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
-                                        "args": {
-                                            "__scriptTabs": "text",
-                                            "text": [
-                                                "Hallo Cousin Winnie"
-                                            ],
-                                            "nameTag": "Carina",
-                                            "nameX": 2,
-                                            "avatarType": "small",
-                                            "avatarId": "",
-                                            "largeAvatar": "",
-                                            "avatarX": 2,
-                                            "avatarY": 2,
-                                            "avatarWidth": 3,
-                                            "orientation": "left",
-                                            "__collapse": true
-                                        },
-                                        "id": "cb9942a6-07ad-4e6b-a4f5-29938685234e"
-                                    }
-                                ],
+                                "true": [],
                                 "false": [
                                     {
                                         "command": "EVENT_ACTOR_EMOTE",
@@ -11772,7 +11771,8 @@
                                         "args": {
                                             "__scriptTabs": "text",
                                             "text": [
-                                                "Leute sie kommt! Winnie bitte bleib kurz ruhig und schau uns zu."
+                                                "Bitte warte kurz.",
+                                                "Leute sie kommt!"
                                             ],
                                             "nameTag": "Carina",
                                             "nameX": 2,
@@ -12034,7 +12034,9 @@
                             "args": {
                                 "__scriptTabs": "text",
                                 "text": [
-                                    "Wo ist der Winnie? Wo ist der Winnie? Da ist der Winnie!"
+                                    "Wo ist der Winnie?",
+                                    "Wo ist der Winnie? ",
+                                    "Da ist der Winnie!"
                                 ],
                                 "nameTag": "Harald",
                                 "nameX": 2,
@@ -12077,7 +12079,8 @@
                             "args": {
                                 "__scriptTabs": "text",
                                 "text": [
-                                    "Ja hallo Winston wie geht es dir?"
+                                    "Ja hallo Winston",
+                                    "Wie geht es dir?"
                                 ],
                                 "nameTag": "Monika",
                                 "nameX": 2,
@@ -15914,7 +15917,8 @@
                     "args": {
                         "__scriptTabs": "text",
                         "text": [
-                            "Hey winston da bist du ja!"
+                            "Hey winston",
+                            "Da bist du ja."
                         ],
                         "nameTag": "Markus",
                         "nameX": 2,
@@ -15952,7 +15956,8 @@
                     "args": {
                         "__scriptTabs": "text",
                         "text": [
-                            "Hast du den Ball erwischt?"
+                            "Ist das da in \ndeinem Maul etwa\n...",
+                            "der Ring!"
                         ],
                         "nameTag": "Markus",
                         "nameX": 2,
@@ -44326,8 +44331,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 449,
-        "worldScrollY": 1022,
+        "worldScrollX": 1261,
+        "worldScrollY": 963,
         "zoom": 109.99147514160722,
         "customColorsEnabled": true,
         "sgbEnabled": false,
