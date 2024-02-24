@@ -2,29 +2,26 @@
 [J]
 
 Must:
-- [J] ende katzen fehlt
-- [J] reihenfolge ändern: prolog -> triathlon -> fischfarm -> epilog
-- [J] end screen nach epilog
+- dialog line breaks
+- dialoge sprache verbessern (Mundart)
+- [J]npc's fischfarm (babsi, thomas, lukas, maria, toni, martin, maria, mathias)
+- [J]cartridge vorbereiten (cartidge, sticker, aufsteller 3d druck)
+- Gameboy besorgen
+- [J]Starbildschirm hintergrund
+- [J]Fischerhütte neu babsis feedback (grundriss)
+- [J]Unterwasser background updates (Matchboxauto, bierkrüge)
+- [T]triathlon besser erkennbar machen
+- [J]katzenfight szene background an den vom wohnzimmer anpassen
+- [T]triathlon ende ball aufräumen
 
 Nice:
 - Fishfarm ball init
 - Tobis katzen 2 farben (grau, schwarz)
 - background sounds wechseln für einige szenen
 - sound effecte hinzufügen
-- dialog line breaks
-- dialoge sprache verbessern (Mundart)
-- npc's fischfarm (babsi, thomas, lukas, maria, toni, martin, maria, mathias)
-- cartridge vorbereiten (cartidge, sticker, aufsteller 3d druck)
-- Starbildschirm hintergrund
 - Credits
-- Gameboy besorgen
 - Glückwünsche mit npc's
-- Fischerhütte neu babsis feedback (grundriss)
-- Unterwasser background updates (Matchboxauto, bierkrüge)
-- triathlon besser erkennbar machen
-- katzenfight szene background an den vom wohnzimmer anpassen
-- ball nach dem katzenfight spawnd immer wieder
-- triathlon ende ball aufräumen
+
 
 Should:
 - Snackos verteilen
