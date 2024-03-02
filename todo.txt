@@ -13,6 +13,8 @@ Must:
 - [T]triathlon besser erkennbar machen
 - [J]katzenfight szene background an den vom wohnzimmer anpassen
 - [T]triathlon ende ball aufräumen
+- colouring
+- [J]jump animation winston
 
 Nice:
 - Fishfarm ball init
