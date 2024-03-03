@@ -12,7 +12,7 @@ Must:
 
 Nice:
 - [J]Unterwasser background updates (Matchboxauto, bierkrüge)
-- Fishfarm ball init
+- [J]Fishfarm ball init
 - background sounds wechseln für einige szenen
 - sound effecte hinzufügen
 - Credits

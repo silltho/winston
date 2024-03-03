@@ -15426,57 +15426,6 @@
                             "id": "6e919677-21d4-494f-bddc-107f6d0b8a6b"
                         },
                         {
-                            "command": "EVENT_LOOP_FOR",
-                            "args": {
-                                "variable": "L0",
-                                "from": {
-                                    "type": "number",
-                                    "value": 0
-                                },
-                                "comparison": "<=",
-                                "to": {
-                                    "type": "number",
-                                    "value": 7
-                                },
-                                "operation": "+=",
-                                "value": {
-                                    "type": "number",
-                                    "value": 1
-                                },
-                                "__collapse": true,
-                                "__comment": true
-                            },
-                            "children": {
-                                "true": [
-                                    {
-                                        "command": "EVENT_ACTOR_MOVE_RELATIVE",
-                                        "args": {
-                                            "actorId": "$self$",
-                                            "x": 0,
-                                            "y": 1,
-                                            "moveType": "horizontal",
-                                            "useCollisions": false,
-                                            "__collapse": false
-                                        },
-                                        "id": "b33173c7-c18b-44d0-84ec-62d9892d8e79"
-                                    },
-                                    {
-                                        "command": "EVENT_ACTOR_MOVE_RELATIVE",
-                                        "args": {
-                                            "actorId": "fab10d70-6ef3-415b-8795-f3132402c488",
-                                            "x": 0,
-                                            "y": 1,
-                                            "moveType": "horizontal",
-                                            "useCollisions": false,
-                                            "__collapse": true
-                                        },
-                                        "id": "1e15ba94-9072-4d78-9749-50e3e65d6524"
-                                    }
-                                ]
-                            },
-                            "id": "e763895c-2b24-405b-a59f-38323d48eda4"
-                        },
-                        {
                             "command": "EVENT_ACTOR_MOVE_TO",
                             "args": {
                                 "actorId": "c2d8b3fe-4b08-44bf-bbe2-9c72f0aceaac",
@@ -15493,6 +15442,19 @@
                                 "__collapse": false
                             },
                             "id": "e8b71e14-e9e0-4e5a-b3d6-89fd2434c3cd"
+                        },
+                        {
+                            "command": "EVENT_SOUND_PLAY_EFFECT",
+                            "args": {
+                                "type": "80ade1b8-1778-4742-93a4-c988f7bc1dd4",
+                                "priority": "medium",
+                                "pitch": 4,
+                                "frequency": 200,
+                                "duration": 0.5,
+                                "wait": true,
+                                "effect": 0
+                            },
+                            "id": "c2d1ae4f-3bcb-4aa8-b773-e5462fff984b"
                         },
                         {
                             "command": "EVENT_TEXT",
@@ -51308,7 +51270,7 @@
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
         "worldScrollX": 1314,
-        "worldScrollY": 4279,
+        "worldScrollY": 4278,
         "zoom": 325,
         "customColorsEnabled": true,
         "sgbEnabled": false,
