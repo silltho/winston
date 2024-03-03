@@ -11,13 +11,11 @@ Must:
 - [T]colouring
 
 Nice:
-- [J]Unterwasser background updates (Matchboxauto, bierkrüge)
-- [J]Fishfarm ball init
+
 - background sounds wechseln für einige szenen
 - sound effecte hinzufügen
 - Credits
 - Glückwünsche mit npc's
-
 
 Should:
 - Snackos verteilen
@@ -26,6 +24,7 @@ Could:
 - Hitboxen statt kollision detection ausprobieren
 - Prolog tobi wc szene
 - Prolog tobi schlafzimmer szene
+- [J]Unterwasser background updates (Matchboxauto, bierkrüge)
 
 
 
