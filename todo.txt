@@ -6,19 +6,13 @@ Must:
 - dialoge sprache verbessern (Mundart)
 - [J]npc's fischfarm (babsi, thomas, lukas, maria, toni, martin, maria, mathias)
 - [J]cartridge vorbereiten (cartidge, sticker, aufsteller 3d druck)
-- Gameboy besorgen
-- [J]Starbildschirm hintergrund
-- [J]Fischerhütte neu babsis feedback (grundriss)
-- [J]Unterwasser background updates (Matchboxauto, bierkrüge)
 - [T]triathlon besser erkennbar machen
-- [J]katzenfight szene background an den vom wohnzimmer anpassen
 - [T]triathlon ende ball aufräumen
-- colouring
-- [J]jump animation winston
+- [T]colouring
 
 Nice:
+- [J]Unterwasser background updates (Matchboxauto, bierkrüge)
 - Fishfarm ball init
-- Tobis katzen 2 farben (grau, schwarz)
 - background sounds wechseln für einige szenen
 - sound effecte hinzufügen
 - Credits
