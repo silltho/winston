@@ -5310,24 +5310,10 @@
                     "height": 1,
                     "script": [
                         {
-                            "command": "EVENT_SOUND_PLAY_EFFECT",
-                            "args": {
-                                "type": "b745f13c-a035-47f9-949d-02ea85d626ac",
-                                "priority": "medium",
-                                "pitch": 4,
-                                "frequency": 200,
-                                "duration": 0.5,
-                                "wait": true,
-                                "effect": 0,
-                                "__collapse": false
-                            },
-                            "id": "231c977d-e2ff-4ccf-9b8f-e7346b151137"
-                        },
-                        {
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "3",
-                                "__collapseElse": true
+                                "__collapseElse": false
                             },
                             "children": {
                                 "true": [
@@ -5339,6 +5325,20 @@
                                         },
                                         "children": {
                                             "true": [
+                                                {
+                                                    "command": "EVENT_SOUND_PLAY_EFFECT",
+                                                    "args": {
+                                                        "type": "b745f13c-a035-47f9-949d-02ea85d626ac",
+                                                        "priority": "medium",
+                                                        "pitch": 4,
+                                                        "frequency": 200,
+                                                        "duration": 0.5,
+                                                        "wait": true,
+                                                        "effect": 0,
+                                                        "__collapse": false
+                                                    },
+                                                    "id": "231c977d-e2ff-4ccf-9b8f-e7346b151137"
+                                                },
                                                 {
                                                     "command": "EVENT_SWITCH_SCENE",
                                                     "args": {
@@ -55820,7 +55820,7 @@
             "name": "Default Sprites",
             "colors": [
                 "F8F8F8",
-                "D88078",
+                "D8B840",
                 "C88068",
                 "000000"
             ],
@@ -57934,8 +57934,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 1762,
-        "worldScrollY": 1212,
+        "worldScrollX": 2524,
+        "worldScrollY": 503,
         "zoom": 198.26125621795654,
         "customColorsEnabled": true,
         "sgbEnabled": false,
