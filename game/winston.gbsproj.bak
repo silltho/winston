@@ -2760,7 +2760,8 @@
                                         "args": {
                                             "__scriptTabs": "text",
                                             "text": [
-                                                "Wo ist er den nur?! \nIch hab ihn doch \nhier versteckt..."
+                                                "Wo is er den nur?",
+                                                "I hob eam doch \nhier versteckt"
                                             ],
                                             "nameTag": "Markus",
                                             "nameX": 2,
@@ -2787,7 +2788,7 @@
                                         "args": {
                                             "__scriptTabs": "text",
                                             "text": [
-                                                "Oh nein der \nTischtennisball!!!"
+                                                "Na so a Mist der \nTischtennisball!"
                                             ],
                                             "nameTag": "Markus",
                                             "nameX": 2,
@@ -2826,7 +2827,7 @@
                                         "args": {
                                             "__scriptTabs": "text",
                                             "text": [
-                                                "Los winston bitte hol den ball!"
+                                                "Winston bitte hol den \nBall!"
                                             ],
                                             "nameTag": "Markus",
                                             "nameX": 2,
@@ -4480,7 +4481,8 @@
                             "args": {
                                 "__scriptTabs": "text",
                                 "text": [
-                                    "Ja mei winston! jetzt hab i gar kane leckerlies für die do"
+                                    "Mei winston...\n",
+                                    "Jetzt hab i gar kane \nleckerlies für die \ndo"
                                 ],
                                 "nameTag": "Maria",
                                 "nameX": 2,
@@ -4523,7 +4525,8 @@
                             "args": {
                                 "__scriptTabs": "text",
                                 "text": [
-                                    "Na schau mal wer da ist! Da nicht hund is a do!"
+                                    "Na schau mal wer da ist.",
+                                    "Da nicht hund is a do!"
                                 ],
                                 "nameTag": "Wolfgang",
                                 "nameX": 2,
@@ -4566,7 +4569,7 @@
                             "args": {
                                 "__scriptTabs": "text",
                                 "text": [
-                                    "Jo do gfreit sie ober ana"
+                                    "Jo do gfreit sie ober \nana."
                                 ],
                                 "nameTag": "Victoria",
                                 "nameX": 2,
@@ -6310,7 +6313,7 @@
                                 "operator": "==",
                                 "comparator": 1,
                                 "__collapseElse": false,
-                                "__collapse": true,
+                                "__collapse": false,
                                 "__comment": true
                             },
                             "children": {
@@ -6625,7 +6628,7 @@
                                 "variable": "L0",
                                 "__collapseElse": false,
                                 "__collapse": false,
-                                "__disableElse": true,
+                                "__disableElse": false,
                                 "__comment": false
                             },
                             "children": {
@@ -6635,7 +6638,7 @@
                                         "args": {
                                             "__scriptTabs": "text",
                                             "text": [
-                                                "Du bist so ein Süßer!\nHier einen Snacko"
+                                                "Du bist so a Süßer!\nHier einen Snacko"
                                             ],
                                             "nameTag": "Rebecca",
                                             "nameX": 2,
@@ -6670,7 +6673,7 @@
                                         "args": {
                                             "__scriptTabs": "text",
                                             "text": [
-                                                "Du hattest schon einen \nSnacko sei nicht so \ngierig!"
+                                                "Du hattest schon an \nSnacko sei ned so \ngierig!"
                                             ],
                                             "nameTag": "Rebecca",
                                             "nameX": 2,
@@ -6957,7 +6960,8 @@
                                             "frequency": 200,
                                             "duration": 0.5,
                                             "wait": true,
-                                            "effect": 0
+                                            "effect": 0,
+                                            "__collapse": true
                                         },
                                         "id": "c976546b-f606-4a66-8bb5-e63e450f598c"
                                     },
@@ -6977,7 +6981,7 @@
                                             "avatarY": 2,
                                             "avatarWidth": 3,
                                             "orientation": "left",
-                                            "__collapse": false
+                                            "__collapse": true
                                         },
                                         "id": "4155b0e7-e1b7-49e3-97c7-75500a96733d"
                                     },
@@ -6986,26 +6990,7 @@
                                         "args": {
                                             "__scriptTabs": "text",
                                             "text": [
-                                                "Brav an ganzen tag \ngeschlafen stimmts?"
-                                            ],
-                                            "nameTag": "Markus",
-                                            "nameX": 2,
-                                            "avatarType": "small",
-                                            "avatarId": "",
-                                            "largeAvatar": "",
-                                            "avatarX": 2,
-                                            "avatarY": 2,
-                                            "avatarWidth": 3,
-                                            "orientation": "left",
-                                            "__collapse": true
-                                        },
-                                        "id": "e1aaf25e-45e7-41fb-afaf-94a3ee1ea5bf"
-                                    },
-                                    {
-                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
-                                        "args": {
-                                            "__scriptTabs": "nameTag",
-                                            "text": [
+                                                "Brav an ganzen tag \ngeschlafen stimmts?",
                                                 "So ein leben hätt i a \ngern."
                                             ],
                                             "nameTag": "Markus",
@@ -7019,7 +7004,7 @@
                                             "orientation": "left",
                                             "__collapse": true
                                         },
-                                        "id": "5f0ebbe1-7109-4adc-a848-322aa8a284b2"
+                                        "id": "e1aaf25e-45e7-41fb-afaf-94a3ee1ea5bf"
                                     },
                                     {
                                         "command": "EVENT_ACTOR_EMOTE",
@@ -7047,7 +7032,8 @@
                                         "args": {
                                             "__scriptTabs": "text",
                                             "text": [
-                                                "Rebecca i muas drigend \nkacken.\nKomm bloß ned ins Bad!"
+                                                "Rebecca i muas drigend \nkacken.",
+                                                "Komm bloß ned ins Bad!"
                                             ],
                                             "nameTag": "Markus",
                                             "nameX": 2,
@@ -7067,7 +7053,7 @@
                                         "args": {
                                             "__scriptTabs": "text",
                                             "text": [
-                                                "Danke für die info."
+                                                "Danke hab verstanden"
                                             ],
                                             "nameTag": "Rebecca",
                                             "nameX": 2,
@@ -7732,7 +7718,7 @@
                             "command": "EVENT_TEXT",
                             "args": {
                                 "text": [
-                                    "Winston wird in das seltsame Portal gezogen."
+                                    "Winston wird in das \nseltsame Portal \ngezogen."
                                 ],
                                 "avatarId": ""
                             },
@@ -57208,8 +57194,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 788,
-        "worldScrollY": 475,
+        "worldScrollX": 647,
+        "worldScrollY": 529,
         "zoom": 127.07879003882408,
         "customColorsEnabled": true,
         "sgbEnabled": false,
