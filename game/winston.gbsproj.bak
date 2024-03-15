@@ -7151,7 +7151,7 @@
             "spritePaletteIds": [
                 null,
                 null,
-                null,
+                "f607a694-8de6-4892-863b-d645b192d227",
                 null,
                 null,
                 null,
@@ -10374,7 +10374,7 @@
                 null,
                 null,
                 null,
-                null,
+                "8fb67c42-9057-47ce-a457-7970b0c4e818",
                 "7a3a07f6-fb66-4c8e-a399-02d08f44f440"
             ],
             "collisions": [
@@ -10743,7 +10743,7 @@
             "id": "3242e5a4-fd28-4bea-b790-8884d64ef5b7",
             "symbol": "scene_14",
             "x": 749.6495802603866,
-            "y": 1011.8983708442215,
+            "y": 1011.3263755812336,
             "actors": [
                 {
                     "name": "",
@@ -11660,7 +11660,7 @@
                 null,
                 null,
                 null,
-                null,
+                "23e9030d-f635-4945-b31e-17ae9e5dfbd5",
                 "23e9030d-f635-4945-b31e-17ae9e5dfbd5",
                 "7a3a07f6-fb66-4c8e-a399-02d08f44f440"
             ],
@@ -12390,7 +12390,7 @@
             "id": "1e36f565-f57c-4883-870b-d1db8006a31d",
             "symbol": "scene_16",
             "x": 1012.4556149467442,
-            "y": 907.2676419232454,
+            "y": 906.6956466602575,
             "actors": [
                 {
                     "name": "",
@@ -13036,8 +13036,8 @@
             "spritePaletteIds": [
                 null,
                 null,
-                null,
-                null,
+                "f607a694-8de6-4892-863b-d645b192d227",
+                "f607a694-8de6-4892-863b-d645b192d227",
                 null,
                 null,
                 "f607a694-8de6-4892-863b-d645b192d227",
@@ -13769,7 +13769,7 @@
             "id": "92c07306-3fc9-488c-8b83-4934067e8f1f",
             "symbol": "scene_17",
             "x": 1260.2673261341106,
-            "y": 899.2184071602136,
+            "y": 898.6464118972257,
             "actors": [
                 {
                     "name": "",
@@ -14273,10 +14273,10 @@
             "spritePaletteIds": [
                 null,
                 null,
-                null,
-                null,
-                "23e9030d-f635-4945-b31e-17ae9e5dfbd5",
                 "f607a694-8de6-4892-863b-d645b192d227",
+                "5bb9d666-bf9a-4721-a67e-42e187ba1ca2",
+                "23e9030d-f635-4945-b31e-17ae9e5dfbd5",
+                "a355f332-0795-42c8-8f88-cfb71fdef289",
                 "a355f332-0795-42c8-8f88-cfb71fdef289",
                 "7a3a07f6-fb66-4c8e-a399-02d08f44f440"
             ],
@@ -16922,7 +16922,7 @@
                 null,
                 null,
                 null,
-                null,
+                "5bb9d666-bf9a-4721-a67e-42e187ba1ca2",
                 null,
                 null,
                 "5bb9d666-bf9a-4721-a67e-42e187ba1ca2",
@@ -21112,8 +21112,8 @@
                 null,
                 null,
                 null,
-                "a355f332-0795-42c8-8f88-cfb71fdef289",
                 "23e9030d-f635-4945-b31e-17ae9e5dfbd5",
+                "a355f332-0795-42c8-8f88-cfb71fdef289",
                 "7a3a07f6-fb66-4c8e-a399-02d08f44f440"
             ],
             "collisions": [
@@ -34691,7 +34691,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -34704,7 +34704,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -34722,7 +34722,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -34735,7 +34735,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -34786,7 +34786,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 6,
                                             "priority": false
                                         },
                                         {
@@ -34799,7 +34799,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 6,
                                             "priority": false
                                         }
                                     ]
@@ -34817,7 +34817,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 6,
                                             "priority": false
                                         },
                                         {
@@ -34830,7 +34830,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 0,
+                                            "paletteIndex": 6,
                                             "priority": false
                                         }
                                     ]
@@ -37589,7 +37589,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -37602,7 +37602,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -37634,7 +37634,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -37647,7 +37647,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -37670,7 +37670,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -37683,7 +37683,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -37706,7 +37706,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -37719,7 +37719,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -37737,7 +37737,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -37750,7 +37750,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -37782,7 +37782,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -37795,7 +37795,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -37813,7 +37813,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -37826,7 +37826,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -37849,7 +37849,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -37862,7 +37862,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -37880,7 +37880,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -37893,7 +37893,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 6,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -55784,7 +55784,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -55797,7 +55797,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -55810,7 +55810,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -55823,7 +55823,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         }
                                     ]
@@ -55841,7 +55841,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -55854,7 +55854,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -55867,7 +55867,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -55880,7 +55880,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         }
                                     ]
@@ -55898,7 +55898,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -55911,7 +55911,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -55924,7 +55924,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         },
                                         {
@@ -55937,7 +55937,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 5,
+                                            "paletteIndex": 2,
                                             "priority": false
                                         }
                                     ]
@@ -56307,7 +56307,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -56320,7 +56320,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -56352,7 +56352,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -56365,7 +56365,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -56388,7 +56388,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -56401,7 +56401,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -56424,7 +56424,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -56437,7 +56437,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -56455,7 +56455,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -56468,7 +56468,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -56500,7 +56500,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -56513,7 +56513,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -56531,7 +56531,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -56544,7 +56544,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -56567,7 +56567,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -56580,7 +56580,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -56598,7 +56598,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         },
@@ -56611,7 +56611,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "palette": 0,
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 5,
                                             "objPalette": "OBP0",
                                             "priority": false
                                         }
@@ -57136,7 +57136,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57149,7 +57149,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57162,7 +57162,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57175,7 +57175,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         }
                                     ]
@@ -57193,7 +57193,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57206,7 +57206,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57219,7 +57219,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57232,7 +57232,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         }
                                     ]
@@ -57264,7 +57264,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57277,7 +57277,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57290,7 +57290,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57303,7 +57303,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         }
                                     ]
@@ -57321,7 +57321,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57334,7 +57334,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57347,7 +57347,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57360,7 +57360,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         }
                                     ]
@@ -57383,7 +57383,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57396,7 +57396,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57409,7 +57409,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57422,7 +57422,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         }
                                     ]
@@ -57440,7 +57440,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57453,7 +57453,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57466,7 +57466,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         },
                                         {
@@ -57479,7 +57479,7 @@
                                             "flipX": false,
                                             "flipY": false,
                                             "objPalette": "OBP0",
-                                            "paletteIndex": 6,
+                                            "paletteIndex": 3,
                                             "priority": false
                                         }
                                     ]
@@ -62099,6 +62099,16 @@
                 "000000",
                 "000000"
             ]
+        },
+        {
+            "id": "8fb67c42-9057-47ce-a457-7970b0c4e818",
+            "name": "biker",
+            "colors": [
+                "F8F8F8",
+                "303068",
+                "000000",
+                "000000"
+            ]
         }
     ],
     "customEvents": [
@@ -64065,9 +64075,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 802,
-        "worldScrollY": 2425,
-        "zoom": 174.82662265002728,
+        "worldScrollX": 919,
+        "worldScrollY": 2403,
+        "zoom": 193.56372122466564,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
@@ -64095,9 +64105,9 @@
         "defaultUIPaletteId": "default-ui",
         "playerPaletteId": "",
         "navigatorSplitSizes": [
-            30,
+            205,
             338,
-            391
+            216
         ],
         "showNavigator": true,
         "defaultFontId": "948c169c-8e4b-491c-a5f0-66898bbf45d9",
