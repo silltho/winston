@@ -21756,7 +21756,7 @@
                         "avatarY": 2,
                         "avatarWidth": 3,
                         "orientation": "left",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "id": "4ffe0203-c028-4120-afc5-3ae79768f504"
                 },
@@ -21784,7 +21784,7 @@
                         "__scriptTabs": "text",
                         "text": [
                             "Was hast du \nscho wieder im \nMaul?",
-                            "Is des der \nTischetennisball?"
+                            "Is des der \nTischtennisball?"
                         ],
                         "nameTag": "Markus",
                         "nameX": 2,
@@ -22016,7 +22016,7 @@
                     "args": {
                         "__scriptTabs": "text",
                         "text": [
-                            "Wiston?!",
+                            "Winston?!",
                             "Bist du hier \num di zu \nverabschieden?",
                             "Des is aber \nnett von dir.",
                             "Machs gut und sei \nbrav wärend wir \nauf urlaub sind."
@@ -22302,7 +22302,8 @@
                 null,
                 null,
                 null,
-                "7a3a07f6-fb66-4c8e-a399-02d08f44f440"
+                "7a3a07f6-fb66-4c8e-a399-02d08f44f440",
+                "ddf8db0b-ccd9-49bb-8c8d-679e27be8445"
             ],
             "spritePaletteIds": [],
             "collisions": [
@@ -22671,7 +22672,7 @@
             "id": "e7241604-f901-4b7f-8081-18f3d198a822",
             "symbol": "scene_6",
             "x": 262.2857142857143,
-            "y": 93.71428571428575,
+            "y": 94.23091145059267,
             "actors": [
                 {
                     "name": "start_btn",
@@ -28821,7 +28822,6 @@
                 7,
                 7,
                 7,
-                4,
                 7,
                 7,
                 7,
@@ -28841,7 +28841,6 @@
                 7,
                 7,
                 7,
-                4,
                 7,
                 7,
                 7,
@@ -28883,7 +28882,6 @@
                 7,
                 7,
                 7,
-                4,
                 7,
                 7,
                 7,
@@ -28921,7 +28919,6 @@
                 7,
                 7,
                 7,
-                4,
                 7,
                 7,
                 7,
@@ -28941,7 +28938,6 @@
                 7,
                 7,
                 7,
-                4,
                 7,
                 7,
                 7,
@@ -28961,7 +28957,6 @@
                 7,
                 7,
                 7,
-                4,
                 7,
                 7,
                 7,
@@ -28981,8 +28976,6 @@
                 7,
                 7,
                 7,
-                4,
-                4,
                 7,
                 7,
                 7,
@@ -29001,8 +28994,16 @@
                 7,
                 7,
                 7,
-                4,
-                4,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
+                7,
                 7,
                 7,
                 7,
@@ -64075,9 +64076,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 919,
-        "worldScrollY": 2403,
-        "zoom": 193.56372122466564,
+        "worldScrollX": 632,
+        "worldScrollY": 1968,
+        "zoom": 149.6264276355505,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",

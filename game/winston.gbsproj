@@ -21756,7 +21756,7 @@
                         "avatarY": 2,
                         "avatarWidth": 3,
                         "orientation": "left",
-                        "__collapse": false
+                        "__collapse": true
                     },
                     "id": "4ffe0203-c028-4120-afc5-3ae79768f504"
                 },
@@ -21784,7 +21784,7 @@
                         "__scriptTabs": "text",
                         "text": [
                             "Was hast du \nscho wieder im \nMaul?",
-                            "Is des der \nTischetennisball?"
+                            "Is des der \nTischtennisball?"
                         ],
                         "nameTag": "Markus",
                         "nameX": 2,
@@ -22016,10 +22016,10 @@
                     "args": {
                         "__scriptTabs": "text",
                         "text": [
-                            "Wiston?!",
+                            "Winston?!",
                             "Bist du hier \num di zu \nverabschieden?",
                             "Des is aber \nnett von dir.",
-                            "Machs gut und sei \nbrav wärend wir \nauf urlaub sind."
+                            "Machs gut und sei \nbrav während wir \nauf urlaub sind."
                         ],
                         "nameTag": "Rebecca",
                         "nameX": 2,
@@ -64076,9 +64076,9 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 441,
-        "worldScrollY": 0,
-        "zoom": 193.56372122466564,
+        "worldScrollX": 632,
+        "worldScrollY": 1968,
+        "zoom": 149.6264276355505,
         "customColorsEnabled": true,
         "sgbEnabled": false,
         "customHead": "",
