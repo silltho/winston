@@ -1,6 +1,6 @@
 {
     "name": "winston",
-    "author": "sille",
+    "author": "silltho",
     "_version": "3.2.0",
     "_release": "1",
     "scenes": [
@@ -10023,13 +10023,6 @@
             "triggers": [],
             "script": [
                 {
-                    "command": "EVENT_MUSIC_PLAY",
-                    "args": {
-                        "musicId": "ef1c7588-a511-46c1-9a80-9c2c3eef561a"
-                    },
-                    "id": "8b3283bb-9e3c-47bf-bb60-44def4517a00"
-                },
-                {
                     "command": "EVENT_AWAIT_INPUT",
                     "args": {
                         "input": [
@@ -11117,7 +11110,15 @@
                     "leaveScript": []
                 }
             ],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "5b6199bd-9c10-461a-9990-2825c8a0b7be"
+                    },
+                    "id": "4c83aa44-9622-4722-8119-bb5fb5aca9c1"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
@@ -12520,33 +12521,34 @@
                     "symbol": "actor_36",
                     "script": [
                         {
-                            "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
-                            "args": {
-                                "__scriptTabs": "text",
-                                "text": [
-                                    "Hallo Cousin Winnie"
-                                ],
-                                "nameTag": "Carina",
-                                "nameX": 2,
-                                "avatarType": "small",
-                                "avatarId": "",
-                                "largeAvatar": "",
-                                "avatarX": 2,
-                                "avatarY": 2,
-                                "avatarWidth": 3,
-                                "orientation": "left",
-                                "__collapse": false
-                            },
-                            "id": "cb9942a6-07ad-4e6b-a4f5-29938685234e"
-                        },
-                        {
                             "command": "EVENT_IF_TRUE",
                             "args": {
                                 "variable": "6",
                                 "__collapseElse": false
                             },
                             "children": {
-                                "true": [],
+                                "true": [
+                                    {
+                                        "command": "EVENT_DIALOGUE_NAME_LARGE_AVATAR",
+                                        "args": {
+                                            "__scriptTabs": "text",
+                                            "text": [
+                                                "Hallo Cousin Winnie"
+                                            ],
+                                            "nameTag": "Carina",
+                                            "nameX": 2,
+                                            "avatarType": "small",
+                                            "avatarId": "",
+                                            "largeAvatar": "",
+                                            "avatarX": 2,
+                                            "avatarY": 2,
+                                            "avatarWidth": 3,
+                                            "orientation": "left",
+                                            "__collapse": false
+                                        },
+                                        "id": "cb9942a6-07ad-4e6b-a4f5-29938685234e"
+                                    }
+                                ],
                                 "false": [
                                     {
                                         "command": "EVENT_ACTOR_EMOTE",
@@ -12575,7 +12577,7 @@
                                             "avatarY": 2,
                                             "avatarWidth": 3,
                                             "orientation": "left",
-                                            "__collapse": false
+                                            "__collapse": true
                                         },
                                         "id": "45ac67a8-0f9c-4c06-9499-87ea81e3ea67"
                                     },
@@ -12592,7 +12594,7 @@
                                                 "value": 14
                                             },
                                             "moveType": "diagonal",
-                                            "useCollisions": true,
+                                            "useCollisions": false,
                                             "__collapse": false
                                         },
                                         "id": "a92f7cd0-d4a3-4f3e-b814-4cef06fadf00"
@@ -12608,7 +12610,7 @@
                                                 "type": "number",
                                                 "value": 0
                                             },
-                                            "speed": 0
+                                            "speed": 1
                                         },
                                         "id": "ded720c2-a868-4e3d-a2bf-9c02c8fd932d"
                                     },
@@ -12963,7 +12965,7 @@
                                         "command": "EVENT_TEXT",
                                         "args": {
                                             "text": [
-                                                "Hunde sind während des Triathlons nicht auf der Strecke erlaubt!"
+                                                "Hunde sind während\ndes Triathlons nicht \nauf der Strecke \nerlaubt!"
                                             ],
                                             "avatarId": ""
                                         },
@@ -13012,7 +13014,15 @@
                     "leaveScript": []
                 }
             ],
-            "script": [],
+            "script": [
+                {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "ef1c7588-a511-46c1-9a80-9c2c3eef561a"
+                    },
+                    "id": "94dccc22-1a0a-4c43-97b3-6074d2195baf"
+                }
+            ],
             "playerHit1Script": [],
             "playerHit2Script": [],
             "playerHit3Script": []
@@ -22701,6 +22711,13 @@
             "triggers": [],
             "script": [
                 {
+                    "command": "EVENT_MUSIC_PLAY",
+                    "args": {
+                        "musicId": "ef1c7588-a511-46c1-9a80-9c2c3eef561a"
+                    },
+                    "id": "8aca2699-5a86-4368-9140-80592e421fcf"
+                },
+                {
                     "command": "EVENT_AWAIT_INPUT",
                     "args": {
                         "input": [
@@ -31232,7 +31249,7 @@
                 5,
                 5,
                 5,
-                7,
+                5,
                 5,
                 5,
                 5,
@@ -64076,8 +64093,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 632,
-        "worldScrollY": 1968,
+        "worldScrollX": 1041,
+        "worldScrollY": 1386,
         "zoom": 149.6264276355505,
         "customColorsEnabled": true,
         "sgbEnabled": false,
