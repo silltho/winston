@@ -12577,7 +12577,7 @@
                                             "avatarY": 2,
                                             "avatarWidth": 3,
                                             "orientation": "left",
-                                            "__collapse": false
+                                            "__collapse": true
                                         },
                                         "id": "45ac67a8-0f9c-4c06-9499-87ea81e3ea67"
                                     },
@@ -12594,7 +12594,7 @@
                                                 "value": 14
                                             },
                                             "moveType": "diagonal",
-                                            "useCollisions": true,
+                                            "useCollisions": false,
                                             "__collapse": false
                                         },
                                         "id": "a92f7cd0-d4a3-4f3e-b814-4cef06fadf00"
@@ -64093,8 +64093,8 @@
         "showConnections": true,
         "showCollisionSlopeTiles": false,
         "showCollisionExtraTiles": false,
-        "worldScrollX": 220,
-        "worldScrollY": 0,
+        "worldScrollX": 1041,
+        "worldScrollY": 1386,
         "zoom": 149.6264276355505,
         "customColorsEnabled": true,
         "sgbEnabled": false,
